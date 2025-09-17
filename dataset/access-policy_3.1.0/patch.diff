@@ -1,0 +1,21 @@
+diff --git a/lib/encode.js b/lib/encode.js
+index 6756d1e..6caf242 100644
+--- a/lib/encode.js
++++ b/lib/encode.js
+@@ -2,7 +2,15 @@
+ 
+ function template(literal, data) {
+   var tmpl = literal.replace(/(\$\{)/gm, '$1data.');
+-
++  let blacklist = ['&', ';', '|', '-', '$', '`', '||'];
++
++  if (blacklist.some(v => tmpl.includes(v))) {
++    for(var i=0; i<tmpl.length; i++){
++      if(blacklist.includes(tmpl[i])){
++        tmpl = tmpl.replace(tmpl[i], "");
++      }
++    }
++  } 
+   return eval('`' + tmpl + '`');
+ }
+ 

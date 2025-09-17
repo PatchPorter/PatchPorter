@@ -1,0 +1,13 @@
+{
+  "id": "CVE-2021-23424",
+  "dependencies": {
+    "ansi-html": "0.0.7"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/SNYK-JS-ANSIHTML-1296849",
+    "source2": "https://github.com/advisories/GHSA-whgm-jr23-g3j9"
+  },
+  "fixedVersion": "n/a",
+  "fixCommit": "https://github.com/Tjatse/ansi-html/commit/7cb72a3abe3cdec02b3f9ad8b40e0fd1168873e7",
+  "sink": "index.js:62:18"
+}

@@ -1,0 +1,15 @@
+diff --git a/lib/create.js b/lib/create.js
+index 001fcaf..74d18a2 100644
+--- a/lib/create.js
++++ b/lib/create.js
+@@ -33,6 +33,10 @@ function create(obj, str, val) {
+   for (var k = 0; k < last; k++) {
+     var key = keys[k];
+ 
++    if (key === '__proto__' || key === 'constructor' || key === 'prototype') {
++      return container;
++    }
++
+     if (!tmp[key]) {
+       tmp[key] = typed(keys[k + 1]);
+     }

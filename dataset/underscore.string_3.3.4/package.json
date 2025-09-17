@@ -1,0 +1,13 @@
+{
+  "id": "",
+  "dependencies": {
+    "underscore.string": "3.3.4"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/npm:underscore.string:20170908",
+    "source2": "https://github.com/advisories/GHSA-v2p6-4mp7-3r9v"
+  },
+  "fixedVersion": "3.3.6",
+  "fixCommit": "https://github.com/esamattis/underscore.string/commit/f486cd684c94c12db48b45d52b1472a1b9661029",
+  "sink": "unescapeHTML.js:5:26"
+}

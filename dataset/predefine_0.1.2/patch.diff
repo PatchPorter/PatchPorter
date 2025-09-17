@@ -1,0 +1,30 @@
+diff --git a/index.js b/index.js
+index c7689b0..1fc5872 100644
+--- a/index.js
++++ b/index.js
+@@ -282,7 +282,7 @@ function merge(target, additional) {
+     each(additional, function objectForEach(key, value) {
+       if (target[key] === undefined) {
+         result[key] = value;
+-      } else {
++      } else if (has.call(target, key)) {
+         result[key] = merge(target[key], additional[key]);
+       }
+     });
+diff --git a/test.js b/test.js
+index d45b961..cb71a38 100644
+--- a/test.js
++++ b/test.js
+@@ -181,4 +181,12 @@ describe('predefine', function () {
+       assume(calls).to.equal(1);
+     });
+   });
++
++  describe('.merge', function () {
++    it('avoids prototype polluting', function () {
++      predefine.merge({}, JSON.parse('{"__proto__": {"a": "b"}}'));
++
++      assume(({}).a).to.be.undefined();
++   });
++  });
+ });

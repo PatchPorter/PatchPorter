@@ -1,0 +1,33 @@
+diff --git a/index.js b/index.js
+index 37381e7..4f269dc 100644
+--- a/index.js
++++ b/index.js
+@@ -318,3 +318,15 @@ function pathToArray(path) {
+     return path;
+   }
+ }
++
++const usafeProperties = [
++  '__proto__',
++  'constructor',
++  'prototype',
++];
++
++function validateKey(key) {
++  if (usafeProperties.includes(key)) {
++    throw new Error('Property "' + key + '" is not a valid key');
++  }
++}
+diff --git a/index.js b/index.js
+index 37381e7..4f269dc 100644
+--- a/index.js
++++ b/index.js
+@@ -104,6 +104,8 @@ function setByPath(target, path, value) {
+     target = {};
+   }
+ 
++  validateKey(key);
++
+   if (path.length > 1) {
+     target[key] = setByPath(target[key], path.slice(1), value);
+   }

@@ -1,0 +1,13 @@
+{
+  "id": "",
+  "dependencies": {
+    "email-existence": "0.1.5"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/npm:email-existence:20180225",
+    "source2": ""
+  },
+  "fixedVersion": "0.1.6",
+  "fixCommit": "https://github.com/nmanousos/email-existence/commit/0029ba71b6ad0d8ec0baa2ecc6256d038bdd9b56",
+  "sink": "index.js:8:19"
+}

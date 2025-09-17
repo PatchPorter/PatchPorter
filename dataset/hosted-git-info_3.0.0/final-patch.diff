@@ -1,0 +1,13 @@
+diff --git a/index.js b/index.js
+index 0b08be1..8b3eaba 100644
+--- a/index.js
++++ b/index.js
+@@ -41,7 +41,7 @@ function fromUrl (giturl, opts) {
+     isGitHubShorthand(giturl) ? 'github:' + giturl : giturl
+   )
+   var parsed = parseGitUrl(url)
+-  var shortcutMatch = url.match(new RegExp('^([^:]+):(?:(?:[^@:]+(?:[^@]+)?@)?([^/]*))[/](.+?)(?:[.]git)?($|#)'))
++  var shortcutMatch = url.match(/^([^:]+):(?:[^@]+@)?(?:([^/]*)\/)?([^#]+)/)
+   var matches = Object.keys(gitHosts).map(function (gitHostName) {
+     try {
+       var gitHostInfo = gitHosts[gitHostName]

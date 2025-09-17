@@ -1,0 +1,15 @@
+diff --git a/minimatch.js b/minimatch.js
+index ec4c05c5..830a2724 100644
+--- a/minimatch.js
++++ b/minimatch.js
+@@ -261,6 +261,10 @@ function braceExpand (pattern, options) {
+ Minimatch.prototype.parse = parse
+ var SUBPARSE = {}
+ function parse (pattern, isSub) {
++  if (pattern.length > 1024 * 64) {
++    throw new TypeError('pattern is too long')
++  }
++
+   var options = this.options
+ 
+   // shortcuts

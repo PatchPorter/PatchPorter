@@ -1,0 +1,13 @@
+{
+  "id": "CVE-2021-23343",
+  "dependencies": {
+    "path-parse": "1.0.6"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/SNYK-JS-PATHPARSE-1077067",
+    "source2": "https://github.com/advisories/GHSA-hj48-42vr-x3v9"
+  },
+  "fixedVersion": "1.0.7",
+  "fixCommit": "https://github.com/jbgutierrez/path-parse/commit/09e1086512bd50f2767b8c32fa74c0ff0be4c8cd",
+  "sink": "index.js:59:22"
+}

@@ -1,0 +1,29 @@
+diff --git a/lib/merge.js b/lib/merge.js
+index 7b57fdd..c1bd798 100644
+--- a/lib/merge.js
++++ b/lib/merge.js
+@@ -33,6 +33,8 @@ function merge(target, source, options = {}) {
+   const keys = Object.getOwnPropertyNames(source);
+   keys.push(...Object.getOwnPropertySymbols(source));
+   for (const key of keys) {
++    if (key === '__proto__')
++      continue;
+     if (options.filter && !options.filter(source, key))
+       continue;
+     if ((options.combine || options.adjunct) && target.hasOwnProperty(key))
+diff --git a/test/merge.js b/test/merge.js
+index 07637e3..11f30e8 100644
+--- a/test/merge.js
++++ b/test/merge.js
+@@ -237,4 +237,11 @@ describe('merge', function() {
+     );
+   });
+ 
++  it('should prevent Prototype Pollution vulnerability', function() {
++    const payload = JSON.parse('{"__proto__":{"polluted":"Yes! Its Polluted"}}');
++    const obj = {};
++    merge(obj, payload, {deep: true});
++    assert.strictEqual(obj.polluted, undefined);
++  });
++
+ });

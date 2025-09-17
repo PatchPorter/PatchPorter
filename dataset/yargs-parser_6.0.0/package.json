@@ -1,0 +1,13 @@
+{
+  "id": "CVE-2020-7608",
+  "dependencies": {
+    "yargs-parser": "6.0.0"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/SNYK-JS-YARGSPARSER-560381",
+    "source2": "https://github.com/advisories/GHSA-p9pc-299p-vxgp"
+  },
+  "fixedVersion": "18.1.1",
+  "fixCommit": "https://github.com/yargs/yargs-parser/commit/6e36df108cd8ed6443c4d4a4536b55b6e9552b3d",
+  "sink": "index.js:587:14"
+}

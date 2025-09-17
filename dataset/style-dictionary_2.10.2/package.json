@@ -1,0 +1,13 @@
+{
+  "id": "",
+  "dependencies": {
+    "style-dictionary": "2.10.2"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/SNYK-JS-STYLEDICTIONARY-1080632",
+    "source2": ""
+  },
+  "fixedVersion": "2.10.3",
+  "fixCommit": "https://github.com/amzn/style-dictionary/commit/89ee39a7953c1825ea4578d43f129e23b4ed5da8",
+  "sink": "lib/utils/deepExtend.js:76:26"
+}

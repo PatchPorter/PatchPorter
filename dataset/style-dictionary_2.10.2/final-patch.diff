@@ -1,0 +1,13 @@
+diff --git a/lib/utils/deepExtend.js b/lib/utils/deepExtend.js
+index 6f7555227..9c81bc10e 100644
+--- a/lib/utils/deepExtend.js
++++ b/lib/utils/deepExtend.js
+@@ -44,6 +44,8 @@ function deepExtend(objects, collision, path) {
+       for (name in options) {
+         if (!options.hasOwnProperty(name))
+           continue;
++        if (name === '__proto__')
++          continue;
+ 
+         src = target[name];
+         copy = options[name];

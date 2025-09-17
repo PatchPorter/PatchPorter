@@ -1,0 +1,13 @@
+{
+  "id": "CVE-2017-5941",
+  "dependencies": {
+    "node-serialize": "0.0.3"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/npm:node-serialize:20170208",
+    "source2": "https://github.com/advisories/GHSA-q4v7-4rhw-9hqm"
+  },
+  "fixedVersion": "n/a",
+  "fixCommit": "https://github.com/luin/serialize/pull/5/commits/8c65da9f1d7faee43aab101acbd36cecfb0c8ff0",
+  "sink": "lib/serialize.js:75:22"
+}

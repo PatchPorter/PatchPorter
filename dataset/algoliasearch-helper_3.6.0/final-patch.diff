@@ -1,0 +1,16 @@
+diff --git a/src/functions/merge.js b/src/functions/merge.js
+index b8b95695e..131256b3e 100644
+--- a/src/functions/merge.js
++++ b/src/functions/merge.js
+@@ -21,7 +21,10 @@ function _merge(target, source) {
+   }
+ 
+   for (var key in source) {
+-    if (!Object.prototype.hasOwnProperty.call(source, key)) {
++    if (
++      !Object.prototype.hasOwnProperty.call(source, key) ||
++      key === '__proto__'
++    ) {
+       continue;
+     }
+ 

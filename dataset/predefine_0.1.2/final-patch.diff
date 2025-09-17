@@ -1,0 +1,13 @@
+diff --git a/index.js b/index.js
+index c7689b0..1fc5872 100644
+--- a/index.js
++++ b/index.js
+@@ -282,7 +282,7 @@ function merge(target, additional) {
+     each(additional, function objectForEach(key, value) {
+       if (target[key] === undefined) {
+         result[key] = value;
+-      } else {
++      } else if (has.call(target, key)) {
+         result[key] = merge(target[key], additional[key]);
+       }
+     });

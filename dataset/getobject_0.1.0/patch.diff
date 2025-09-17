@@ -1,0 +1,44 @@
+diff --git a/lib/getobject.js b/lib/getobject.js
+index e4006fe..7d6aa12 100644
+--- a/lib/getobject.js
++++ b/lib/getobject.js
+@@ -41,6 +41,10 @@ getobject.get = function(obj, parts, create) {
+ // as we go.
+ getobject.set = function(obj, parts, value) {
+   parts = getParts(parts);
++  if (parts.includes('__proto__')) {
++    // do not allow setting of __proto__. See CVE-2020-28282.
++    return;
++  }
+ 
+   var prop = parts.pop();
+   obj = getobject.get(obj, parts, true);
+diff --git a/package.json b/package.json
+index 2562e1d..07a7000 100644
+--- a/package.json
++++ b/package.json
+@@ -29,7 +29,7 @@
+   },
+   "devDependencies": {
+     "grunt-contrib-jshint": "~0.1.1",
+-    "grunt-contrib-nodeunit": "~0.1.2",
++    "grunt-contrib-nodeunit": "~2.1.0",
+     "grunt-contrib-watch": "~0.2.0",
+     "grunt": "~0.4.1"
+   },
+diff --git a/test/namespace_test.js b/test/namespace_test.js
+index 2e1c2ae..a776b8e 100644
+--- a/test/namespace_test.js
++++ b/test/namespace_test.js
+@@ -49,3 +49,11 @@ exports.exists = function(test) {
+   test.equal(getobject.exists(obj, 'a.b.x'), false, 'nonexistent property should not exist.');
+   test.done();
+ };
++
++exports.proto = function(test) {
++  var obj = {};
++  test.equal(getobject.exists(obj, 'isAdmin'), false);
++  getobject.set(obj, '__proto__.isAdmin', true);
++  test.equal(getobject.exists(obj, 'isAdmin'), false);
++  test.done();
++};

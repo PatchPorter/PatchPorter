@@ -1,0 +1,14 @@
+{
+  "id": "CVE-2020-7661",
+  "dependencies": {
+    "re2": "^1.21.3",
+    "urlregex": "0.5.0"
+  },
+  "links": {
+    "source1": "https://github.com/advisories/GHSA-v4rh-8p82-6h5w",
+    "source2": "https://security.snyk.io/vuln/SNYK-JS-URLREGEX-569472"
+  },
+  "fixedVersion": "0.5.1",
+  "fixCommit": "https://github.com/nescalante/urlregex/commit/e5a085afe6abfaea1d1a78f54c45af9ef43ca1f9",
+  "sink": "jasmineAsyncInstall.js:106:37"
+}

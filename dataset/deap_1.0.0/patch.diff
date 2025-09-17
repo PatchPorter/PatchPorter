@@ -1,0 +1,72 @@
+diff --git a/lib/deap.js b/lib/deap.js
+index 6ac55f0..89ef559 100755
+--- a/lib/deap.js
++++ b/lib/deap.js
+@@ -12,6 +12,10 @@ module.exports = {
+ 	mergeShallow: merge
+ };
+ 
++function getProp(obj, p) {
++	return p === '__proto__' ? undefined : obj[p];
++}
++
+ function clone(val) {
+ 	switch(typeOf(val)) {
+ 		case 'object':
+@@ -54,7 +58,7 @@ function extend(a, b /*, [b2..n] */) {
+ function deepExtend(a, b /*, [b2..n] */) {
+ 	slice.call(arguments, 1).forEach(function(b) {
+ 		Object.keys(b).forEach(function(p) {
+-			if(typeOf(b[p]) === 'object' && typeOf(a[p]) === 'object')
++			if(typeOf(getProp(b, p)) === 'object' && typeOf(a[p]) === 'object')
+ 				deepExtend(a[p], b[p]);
+ 			else
+ 				a[p] = deepClone(b[p]);
+@@ -108,7 +112,7 @@ function deepMerge(a, b /*, [b2..n] */) {
+ 		var ap, bp, ta, tb;
+ 		Object.keys(b).forEach(function(p) {
+ 			ap = a[p];
+-			bp = b[p];
++			bp = getProp(b, p);
+ 			ta = typeOf(ap);
+ 			tb = typeOf(bp);
+ 			if(tb === 'object' && ta === 'object')
+diff --git a/test/extend.test.js b/test/extend.test.js
+index aeeb9de..292dfe3 100755
+--- a/test/extend.test.js
++++ b/test/extend.test.js
+@@ -152,4 +152,15 @@ describe('deep extend', function() {
+ 		assert.notStrictEqual(result.nested[0].nested, result.nested[1]);
+ 	});
+ 
++	// Vulnerability reported via hacker1: https://hackerone.com/reports/310446
++	it('should not modify Object prototype (hacker1 #310446)', function() {
++		var a = { foo: 'bar' },
++			b = JSON.parse('{ "__proto__": { "evilBad": "DANGER!!!" } }');
++
++		var result = deepExtend(a, b);
++
++		assert.isUndefined({}.evilBad);
++		assert.isUndefined(Object.prototype.evilBad);
++	});
++
+ });
+diff --git a/test/merge.test.js b/test/merge.test.js
+index 42fa2fa..94261f4 100644
+--- a/test/merge.test.js
++++ b/test/merge.test.js
+@@ -131,4 +131,14 @@ describe('deep merge', function() {
+ 		assert.notStrictEqual(result.nested[0], deeper);
+ 	});
+ 
++	// Vulnerability reported via hacker1: https://hackerone.com/reports/310446
++	it('should not modify Object prototype (hacker1 #310446)', function() {
++		var a = { foo: 'bar' },
++			b = JSON.parse('{ "__proto__": { "evilBad": "DANGER!!!" } }');
++
++		var result = deepMerge(a, b);
++
++		assert.isUndefined({}.evilBad);
++		assert.isUndefined(Object.prototype.evilBad);
++	});
+ });

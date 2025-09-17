@@ -1,0 +1,116 @@
+diff --git a/index.js b/index.js
+index a6c95ba3..f9ee8241 100644
+--- a/index.js
++++ b/index.js
+@@ -421,7 +421,7 @@ function parse (args, opts) {
+     setKey(argv, splitKey, value)
+ 
+     // handle populating aliases of the full key
+-    if (flags.aliases[key]) {
++    if (flags.aliases[key] && flags.aliases[key].forEach) {
+       flags.aliases[key].forEach(function (x) {
+         x = x.split('.')
+         setKey(argv, x, value)
+@@ -659,6 +659,10 @@ function parse (args, opts) {
+     if (!configuration['dot-notation']) keys = [keys.join('.')]
+ 
+     keys.slice(0, -1).forEach(function (key, index) {
++      // TODO(bcoe): in the next major version of yargs, switch to
++      // Object.create(null) for dot notation:
++      key = sanitizeKey(key)
++
+       if (typeof o === 'object' && o[key] === undefined) {
+         o[key] = {}
+       }
+@@ -678,11 +682,13 @@ function parse (args, opts) {
+       }
+     })
+ 
+-    var key = keys[keys.length - 1]
++    // TODO(bcoe): in the next major version of yargs, switch to
++    // Object.create(null) for dot notation:
++    const key = sanitizeKey(keys[keys.length - 1])
+ 
+-    var isTypeArray = checkAllAliases(keys.join('.'), flags.arrays)
+-    var isValueArray = Array.isArray(value)
+-    var duplicate = configuration['duplicate-arguments-array']
++    const isTypeArray = checkAllAliases(keys.join('.'), flags.arrays)
++    const isValueArray = Array.isArray(value)
++    let duplicate = configuration['duplicate-arguments-array']
+ 
+     // nargs has higher priority than duplicate
+     if (!duplicate && checkAllAliases(key, flags.nargs)) {
+@@ -900,4 +906,11 @@ Parser.detailed = function (args, opts) {
+   return parse(args.slice(), opts)
+ }
+ 
++// TODO(bcoe): in the next major version of yargs, switch to
++// Object.create(null) for dot notation:
++function sanitizeKey (key) {
++  if (key === '__proto__') return '___proto___'
++  return key
++}
++
+ module.exports = Parser
+diff --git a/test/fixtures/config.json b/test/fixtures/config.json
+index 43376463..7065ae61 100644
+--- a/test/fixtures/config.json
++++ b/test/fixtures/config.json
+@@ -3,5 +3,14 @@
+     "z": 55,
+     "foo": "baz",
+     "version": "1.0.2",
+-    "truthy": true
++    "truthy": true,
++    "toString": "method name",
++    "__proto__": {
++      "aaa": 99
++    },
++    "bar": {
++      "__proto__": {
++        "bbb": 100
++      }
++    }
+ }
+diff --git a/test/yargs-parser.js b/test/yargs-parser.js
+index a8628261..843c78d6 100644
+--- a/test/yargs-parser.js
++++ b/test/yargs-parser.js
+@@ -427,6 +427,25 @@ describe('yargs-parser', function () {
+   describe('config', function () {
+     var jsonPath = path.resolve(__dirname, './fixtures/config.json')
+ 
++    it('should not pollute the prototype', function () {
++      const argv = parser(['--foo', 'bar'], {
++        alias: {
++          z: 'zoom'
++        },
++        default: {
++          settings: jsonPath
++        },
++        config: 'settings'
++      })
++
++      argv.should.have.property('herp', 'derp')
++      argv.should.have.property('zoom', 55)
++      argv.should.have.property('foo').and.deep.equal('bar')
++
++      expect({}.bbb).to.equal(undefined)
++      expect({}.aaa).to.equal(undefined)
++    })
++
+     // See: https://github.com/chevex/yargs/issues/12
+     it('should load options and values from default config if specified', function () {
+       var argv = parser([ '--foo', 'bar' ], {
+@@ -2963,4 +2982,11 @@ describe('yargs-parser', function () {
+       })
+     })
+   })
++
++  it('should not pollute the prototype', function () {
++    parser(['-f.__proto__.foo', '99', '-x.y.__proto__.bar', '100', '--__proto__', '200'])
++    Object.keys({}.__proto__).length.should.equal(0) // eslint-disable-line
++    expect({}.foo).to.equal(undefined)
++    expect({}.bar).to.equal(undefined)
++  })
+ })

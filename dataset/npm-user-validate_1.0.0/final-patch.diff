@@ -1,0 +1,16 @@
+diff --git a/npm-user-validate.js b/npm-user-validate.js
+index 9250ce3..ffd8791 100644
+--- a/npm-user-validate.js
++++ b/npm-user-validate.js
+@@ -45,7 +46,10 @@ function username (un) {
+ }
+ 
+ function email (em) {
+-  if (!em.match(/^.+@.+\..+$/)) {
++  if (em.length > 254) {
++    return new Error(requirements.email.length)
++  }
++  if (!em.match(/^[^@]+@.+\..+$/)) {
+     return new Error(requirements.email.valid)
+   }
+ 

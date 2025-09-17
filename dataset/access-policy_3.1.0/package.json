@@ -1,0 +1,13 @@
+{
+  "id": "CVE-2020-7674",
+  "dependencies": {
+    "access-policy": "3.1.0"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/SNYK-JS-ACCESSPOLICY-571490",
+    "source2": "https://github.com/advisories/GHSA-fw2f-7f87-5r6c"
+  },
+  "fixedVersion": "n/a",
+  "fixCommit": "https://github.com/TupleAustin/access-policy/pull/2/commits/b5b12e22887a782d8b56a0464db7aaa22cc36d73",
+  "sink": "lib/encode.js:6:10"
+}

@@ -1,0 +1,13 @@
+diff --git a/src/ua-parser.js b/src/ua-parser.js
+index e522d9317..5ea799f83 100755
+--- a/src/ua-parser.js
++++ b/src/ua-parser.js
+@@ -611,7 +611,7 @@
+             /android.+[;\/]\s*(RCT[\d\w]+)\s+build/i                            // RCA Tablets
+             ], [MODEL, [VENDOR, 'RCA'], [TYPE, TABLET]], [
+ 
+-            /android.+[;\/\s]+(Venue[\d\s]{2,7})\s+build/i                      // Dell Venue Tablets
++            /android.+[;\/\s](Venue[\d\s]{2,7})\s+build/i                       // Dell Venue Tablets
+             ], [MODEL, [VENDOR, 'Dell'], [TYPE, TABLET]], [
+ 
+             /android.+[;\/]\s*(Q[T|M][\d\w]+)\s+build/i                         // Verizon Tablet

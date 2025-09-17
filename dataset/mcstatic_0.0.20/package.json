@@ -1,0 +1,13 @@
+{
+  "id": "CVE-2018-16482",
+  "dependencies": {
+    "mcstatic": "0.0.20"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/npm:mcstatic:20180425",
+    "source2": "https://github.com/advisories/GHSA-cxmj-qjv6-vx9p"
+  },
+  "fixedVersion": "= 0.0.20",
+  "fixCommit": "https://github.com/tjchaplin/mcstatic/pull/2/commits/342d0d225b86f2cd6d648e607cc96ee325642bf9",
+  "sink": "lib/responseHandlers.js:23:21"
+}

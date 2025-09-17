@@ -1,0 +1,45 @@
+diff --git a/HISTORY.md b/HISTORY.md
+index 6cef8ef..a131702 100644
+--- a/HISTORY.md
++++ b/HISTORY.md
+@@ -7,6 +7,7 @@ unreleased
+     - perf: unroll the "fast-path" `RegExp`
+   * deps: vary@~1.1.2
+     - perf: improve header token parsing speed
++  * perf: skip unnecessary parsing of entire header
+ 
+ 2.3.9 / 2017-05-19
+ ==================
+diff --git a/index.js b/index.js
+index 618c4a7..58e636c 100644
+--- a/index.js
++++ b/index.js
+@@ -110,14 +110,26 @@ function createQueryGetter (key) {
+  */
+ 
+ function createHeaderGetter (str) {
+-  var header = str.toLowerCase()
++  var name = str.toLowerCase()
+ 
+   return function (req, res) {
+     // set appropriate Vary header
+     vary(res, str)
+ 
++    // get header
++    var header = req.headers[name]
++
++    if (!header) {
++      return undefined
++    }
++
+     // multiple headers get joined with comma by node.js core
+-    return (req.headers[header] || '').split(/ *, */)
++    var index = header.indexOf(',')
++
++    // return first value
++    return index !== -1
++      ? header.substr(0, index).trim()
++      : header.trim()
+   }
+ }
+ 

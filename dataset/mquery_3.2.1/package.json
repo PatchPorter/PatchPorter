@@ -1,0 +1,13 @@
+{
+  "id": "",
+  "dependencies": {
+    "mquery": "3.2.1"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/SNYK-JS-MQUERY-1089718",
+    "source2": "https://github.com/advisories/GHSA-45q2-34rf-mr94"
+  },
+  "fixedVersion": "3.2.3",
+  "fixCommit": "https://github.com/mongoosejs/mquery/commit/792e69fd0a7281a0300be5cade5a6d7c1d468ad4",
+  "sink": "lib/utils.js:137:15"
+}

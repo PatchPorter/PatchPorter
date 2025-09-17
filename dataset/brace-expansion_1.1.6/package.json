@@ -1,0 +1,13 @@
+{
+  "id": "CVE-2017-18077",
+  "dependencies": {
+    "brace-expansion": "1.1.6"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/npm:brace-expansion:20170302",
+    "source2": "https://github.com/advisories/GHSA-832h-xg76-4gv6"
+  },
+  "fixedVersion": "1.1.7",
+  "fixCommit": "https://github.com/juliangruber/brace-expansion/pull/35/commits/b13381281cead487cbdbfd6a69fb097ea5e456c3",
+  "sink": "index.js:109:35"
+}
