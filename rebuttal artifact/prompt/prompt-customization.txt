@@ -1,0 +1,37 @@
+You are an expert in the field of security vulnerabilities and are skilled at migrating vulnerability patches to other vulnerable versions of software.
+Below are the task requirements:
+Input: A vulnerability patch and code from another vulnerable version
+Output: Code repaired according to the patch logic
+Analyze the content and the localization of the changed code in the original patch, and then output the repaired code.
+Requirements:
+1. Please note that if the context of the patch includes content not present in the target version, such content does not need to be applied to the target version, as they are not part of the modifications made by the patch.
+2. Apply only the newly added code from the patch, without changing the original structure of the code.
+3. Only output the code, no explanations
+4. The repaired code should maintain the same syntactic structure as before the repair
+
+Here is an example:
+
+Vulnerability patch:
+```
+{}
+```
+Vulnerable code:
+```
+{}
+```
+Output:
+```
+{}
+```
+
+Now, please process the following input:
+Vulnerability patch:
+```
+{}
+```
+Vulnerable code:
+```
+{}
+```
+
+Output:

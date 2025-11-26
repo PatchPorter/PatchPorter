@@ -1,0 +1,1549 @@
+[
+    {
+        "cve_id": "CVE-2010-3978",
+        "patch_id": "d881b2bb610ea33e2364ff16feb8e702dfeda13",
+        "commit_id": "e2930d66",
+        "patch_url": "https://github.com/railsdog/spree/commit/d881b2bb610ea33e2364ff16feb8e702dfeda13",
+        "commit_url": "https://github.com/railsdog/spree/commit/e2930d66"
+    },
+    {
+        "cve_id": "CVE-2015-5688",
+        "patch_id": "3f1bacd7cfda6556f35563f3e79c60c62aa9d28",
+        "commit_id": "76301d8",
+        "patch_url": "https://github.com/geddy/geddy/commit/3f1bacd7cfda6556f35563f3e79c60c62aa9d28",
+        "commit_url": "https://github.com/geddy/geddy/commit/76301d8"
+    },
+    {
+        "cve_id": "CVE-2015-8857",
+        "patch_id": "4677bfe38142937ff952f95605bcec4618892c3",
+        "commit_id": "7630240",
+        "patch_url": "https://github.com/lautis/uglifier/commit/4677bfe38142937ff952f95605bcec4618892c3",
+        "commit_url": "https://github.com/lautis/uglifier/commit/7630240"
+    },
+    {
+        "cve_id": "CVE-2015-9251",
+        "patch_id": "f60729f3903d17917dc351f3ac87794de379b0c",
+        "commit_id": "b078a620",
+        "patch_url": "https://github.com/jquery/jquery/commit/f60729f3903d17917dc351f3ac87794de379b0c",
+        "commit_url": "https://github.com/jquery/jquery/commit/b078a620"
+    },
+    {
+        "cve_id": "CVE-2016-10533",
+        "patch_id": "746defcd808e2ed1e8931dc36702b25b7db0e94",
+        "commit_id": "cfdc225",
+        "patch_url": "https://github.com/florianholzapfel/express-restify-mongoose/commit/746defcd808e2ed1e8931dc36702b25b7db0e94",
+        "commit_url": "https://github.com/florianholzapfel/express-restify-mongoose/commit/cfdc225"
+    },
+    {
+        "cve_id": "CVE-2016-10536",
+        "patch_id": "2c55b278a491bf45313ecc0825cf800e2f7ff5c",
+        "commit_id": "2a7a011",
+        "patch_url": "https://github.com/socketio/engine.io-client/commit/2c55b278a491bf45313ecc0825cf800e2f7ff5c",
+        "commit_url": "https://github.com/socketio/engine.io-client/commit/2a7a011"
+    },
+    {
+        "cve_id": "CVE-2016-10542",
+        "patch_id": "3e1caf42088c7cd236f23b972917588368ad853",
+        "commit_id": "0328a8f4",
+        "patch_url": "https://github.com/websockets/ws/commit/3e1caf42088c7cd236f23b972917588368ad853",
+        "commit_url": "https://github.com/websockets/ws/commit/0328a8f4"
+    },
+    {
+        "cve_id": "CVE-2016-2515",
+        "patch_id": "ccebde4b24d06014ac573888a21813b29a4a16c",
+        "commit_id": "0833f99",
+        "patch_url": "https://github.com/hueniverse/hawk/commit/ccebde4b24d06014ac573888a21813b29a4a16c",
+        "commit_url": "https://github.com/hueniverse/hawk/commit/0833f99"
+    },
+    {
+        "cve_id": "CVE-2016-4069",
+        "patch_id": "699af1e5206ed9114322adaa3c25c1c969640a5",
+        "commit_id": "ecd279662",
+        "patch_url": "https://github.com/roundcube/roundcubemail/commit/699af1e5206ed9114322adaa3c25c1c969640a5",
+        "commit_url": "https://github.com/roundcube/roundcubemail/commit/ecd279662"
+    },
+    {
+        "cve_id": "CVE-2016-7419",
+        "patch_id": "6933d27afe518967bd1b60e6a7eacd88288929f",
+        "commit_id": "6d4ecf1a",
+        "patch_url": "https://github.com/nextcloud/gallery/commit/6933d27afe518967bd1b60e6a7eacd88288929f",
+        "commit_url": "https://github.com/nextcloud/gallery/commit/6d4ecf1a"
+    },
+    {
+        "cve_id": "CVE-2017-1000042",
+        "patch_id": "275e404057b221edd276b175e0165f23595ad35",
+        "commit_id": "538d229a",
+        "patch_url": "https://github.com/mapbox/mapbox.js/commit/275e404057b221edd276b175e0165f23595ad35",
+        "commit_url": "https://github.com/mapbox/mapbox.js/commit/538d229a"
+    },
+    {
+        "cve_id": "CVE-2017-1000065",
+        "patch_id": "b2db1e24d0e52b961b5c3b3329b6ee717cac53a",
+        "commit_id": "1cc416338",
+        "patch_url": "https://github.com/openmediavault/openmediavault/commit/b2db1e24d0e52b961b5c3b3329b6ee717cac53a",
+        "commit_url": "https://github.com/openmediavault/openmediavault/commit/1cc416338"
+    },
+    {
+        "cve_id": "CVE-2012-2094",
+        "patch_id": "7f8c788aa70db98ac904f37fa4197fcabb80294",
+        "commit_id": "ab2e27522",
+        "patch_url": "https://github.com/openstack/horizon/commit/7f8c788aa70db98ac904f37fa4197fcabb80294",
+        "commit_url": "https://github.com/openstack/horizon/commit/ab2e27522"
+    },
+    {
+        "cve_id": "CVE-2017-16006",
+        "patch_id": "49e24e8f2a431c095ddbb74ecb67cf1cf8f88c4",
+        "commit_id": "6da96c3",
+        "patch_url": "https://github.com/jonschlinkert/remarkable/commit/49e24e8f2a431c095ddbb74ecb67cf1cf8f88c4",
+        "commit_url": "https://github.com/jonschlinkert/remarkable/commit/6da96c3"
+    },
+    {
+        "cve_id": "CVE-2016-6186",
+        "patch_id": "f68e5a99164867ab0e071a936470958ed867479",
+        "commit_id": "93c538694e",
+        "patch_url": "https://github.com/django/django/commit/f68e5a99164867ab0e071a936470958ed867479",
+        "commit_url": "https://github.com/django/django/commit/93c538694e"
+    },
+    {
+        "cve_id": "CVE-2017-16014",
+        "patch_id": "07c8d2ee6017264c3d4deac9f42ca264a3740b4",
+        "commit_id": "0e36912",
+        "patch_url": "https://github.com/nodejitsu/node-http-proxy/commit/07c8d2ee6017264c3d4deac9f42ca264a3740b4",
+        "commit_url": "https://github.com/nodejitsu/node-http-proxy/commit/0e36912"
+    },
+    {
+        "cve_id": "CVE-2017-16018",
+        "patch_id": "a015067232ad62aa035675dc63a46dce31fed3f",
+        "commit_id": "24c57ce",
+        "patch_url": "https://github.com/restify/node-restify/commit/a015067232ad62aa035675dc63a46dce31fed3f",
+        "commit_url": "https://github.com/restify/node-restify/commit/24c57ce"
+    },
+    {
+        "cve_id": "CVE-2017-14849",
+        "patch_id": "19d2d6611",
+        "commit_id": "da185dd12f",
+        "patch_url": "https://github.com/nodejs/node/commit/19d2d6611",
+        "commit_url": "https://github.com/nodejs/node/commit/da185dd12f"
+    },
+    {
+        "cve_id": "CVE-2017-16137",
+        "patch_id": "f53962e944a87e6ca9bb622a2a12dffc22a9bb5",
+        "commit_id": "c38a016",
+        "patch_url": "https://github.com/visionmedia/debug/commit/f53962e944a87e6ca9bb622a2a12dffc22a9bb5",
+        "commit_url": "https://github.com/visionmedia/debug/commit/c38a016"
+    },
+    {
+        "cve_id": "CVE-2017-16138",
+        "patch_id": "855d0c4b8b22e4a80b9401a81f2872058eae274",
+        "commit_id": "ef0b204",
+        "patch_url": "https://github.com/broofa/node-mime/commit/855d0c4b8b22e4a80b9401a81f2872058eae274",
+        "commit_url": "https://github.com/broofa/node-mime/commit/ef0b204"
+    },
+    {
+        "cve_id": "CVE-2017-16908",
+        "patch_id": "39f740068ad21618f6f70b6e37855c61cadbd71",
+        "commit_id": "17bf57c1",
+        "patch_url": "https://github.com/horde/kronolith/commit/39f740068ad21618f6f70b6e37855c61cadbd71",
+        "commit_url": "https://github.com/horde/kronolith/commit/17bf57c1"
+    },
+    {
+        "cve_id": "CVE-2017-17068",
+        "patch_id": "fd6298e824ae6f6fda6085248fd0c3bca667160",
+        "commit_id": "518e2f2",
+        "patch_url": "https://github.com/auth0/auth0.js/commit/fd6298e824ae6f6fda6085248fd0c3bca667160",
+        "commit_url": "https://github.com/auth0/auth0.js/commit/518e2f2"
+    },
+    {
+        "cve_id": "CVE-2015-8027",
+        "patch_id": "dfc6f4a9afdfa1e6f1d0a77098d1850b035643d",
+        "commit_id": "ef062b981e",
+        "patch_url": "https://github.com/nodejs/node/commit/dfc6f4a9afdfa1e6f1d0a77098d1850b035643d",
+        "commit_url": "https://github.com/nodejs/node/commit/ef062b981e"
+    },
+    {
+        "cve_id": "CVE-2017-20165",
+        "patch_id": "f53962e944a87e6ca9bb622a2a12dffc22a9bb5",
+        "commit_id": "c38a016",
+        "patch_url": "https://github.com/debug-js/debug/commit/f53962e944a87e6ca9bb622a2a12dffc22a9bb5",
+        "commit_url": "https://github.com/debug-js/debug/commit/c38a016"
+    },
+    {
+        "cve_id": "CVE-2017-18197",
+        "patch_id": "97b3718db64a6ca9afb3382de2926eb8da66005",
+        "commit_id": "ae4f5d126",
+        "patch_url": "https://github.com/jgraph/mxgraph/commit/97b3718db64a6ca9afb3382de2926eb8da66005",
+        "commit_url": "https://github.com/jgraph/mxgraph/commit/ae4f5d126"
+    },
+    {
+        "cve_id": "CVE-2017-3160",
+        "patch_id": "07dce213a2e9693ca3cf2941c32a92d1cef987c",
+        "commit_id": "510596f5",
+        "patch_url": "https://github.com/apache/cordova-android/commit/07dce213a2e9693ca3cf2941c32a92d1cef987c",
+        "commit_url": "https://github.com/apache/cordova-android/commit/510596f5"
+    },
+    {
+        "cve_id": "CVE-2018-12122",
+        "patch_id": "eb43bc04b1390ce2506144b46d081e63f7a7d5b",
+        "commit_id": "ba22c013a2",
+        "patch_url": "https://github.com/nodejs/node/commit/eb43bc04b1390ce2506144b46d081e63f7a7d5b",
+        "commit_url": "https://github.com/nodejs/node/commit/ba22c013a2"
+    },
+    {
+        "cve_id": "CVE-2018-13863",
+        "patch_id": "bd61c45157c53a1698ff23770160cf4783e9ea4",
+        "commit_id": "ea96577",
+        "patch_url": "https://github.com/mongodb/js-bson/commit/bd61c45157c53a1698ff23770160cf4783e9ea4",
+        "commit_url": "https://github.com/mongodb/js-bson/commit/ea96577"
+    },
+    {
+        "cve_id": "CVE-2018-16491",
+        "patch_id": "d63002dbc5ac2bc89c264a81bfb72769ec924f1",
+        "commit_id": "7e6135a",
+        "patch_url": "https://github.com/dreamerslab/node.extend/commit/d63002dbc5ac2bc89c264a81bfb72769ec924f1",
+        "commit_url": "https://github.com/dreamerslab/node.extend/commit/7e6135a"
+    },
+    {
+        "cve_id": "CVE-2018-10994",
+        "patch_id": "bfbd84f5d1308cdfcb08a1727821f7103be151e",
+        "commit_id": "c00c93914",
+        "patch_url": "https://github.com/signalapp/Signal-Desktop/commit/bfbd84f5d1308cdfcb08a1727821f7103be151e",
+        "commit_url": "https://github.com/signalapp/Signal-Desktop/commit/c00c93914"
+    },
+    {
+        "cve_id": "CVE-2018-3717",
+        "patch_id": "6d5dd30075d2bc4ee97afdbbe3d9d98d8d52d74",
+        "commit_id": "f8a5d54d",
+        "patch_url": "https://github.com/senchalabs/connect/commit/6d5dd30075d2bc4ee97afdbbe3d9d98d8d52d74",
+        "commit_url": "https://github.com/senchalabs/connect/commit/f8a5d54d"
+    },
+    {
+        "cve_id": "CVE-2018-3728",
+        "patch_id": "5aed1a8c4a3d55722d1c799f2368857bf418d6d",
+        "commit_id": "4b10f3d",
+        "patch_url": "https://github.com/hapijs/hoek/commit/5aed1a8c4a3d55722d1c799f2368857bf418d6d",
+        "commit_url": "https://github.com/hapijs/hoek/commit/4b10f3d"
+    },
+    {
+        "cve_id": "CVE-2018-1000136",
+        "patch_id": "1a48ee28276e6588dbf4e70e58d78e7bfdc5704",
+        "commit_id": "4ca518468d",
+        "patch_url": "https://github.com/electron/electron/commit/1a48ee28276e6588dbf4e70e58d78e7bfdc5704",
+        "commit_url": "https://github.com/electron/electron/commit/4ca518468d"
+    },
+    {
+        "cve_id": "CVE-2018-6561",
+        "patch_id": "d22d6cc3458c3c29d2d1fc44652b4bd7f10751f",
+        "commit_id": "9bed588a",
+        "patch_url": "https://github.com/dojo/dijit/commit/d22d6cc3458c3c29d2d1fc44652b4bd7f10751f",
+        "commit_url": "https://github.com/dojo/dijit/commit/9bed588a"
+    },
+    {
+        "cve_id": "CVE-2018-14040",
+        "patch_id": "2a5ba23ce8f041f3548317acc992ed8a736b609",
+        "commit_id": "149096016",
+        "patch_url": "https://github.com/twbs/bootstrap/commit/2a5ba23ce8f041f3548317acc992ed8a736b609",
+        "commit_url": "https://github.com/twbs/bootstrap/commit/149096016"
+    },
+    {
+        "cve_id": "CVE-2018-8319",
+        "patch_id": "862656d6d35670ab15d7de3355c2948cdd827ce",
+        "commit_id": "8ce07e1",
+        "patch_url": "https://github.com/kevlened/msrCrypto/commit/862656d6d35670ab15d7de3355c2948cdd827ce",
+        "commit_url": "https://github.com/kevlened/msrCrypto/commit/8ce07e1"
+    },
+    {
+        "cve_id": "CVE-2018-20677",
+        "patch_id": "2a5ba23ce8f041f3548317acc992ed8a736b609",
+        "commit_id": "149096016",
+        "patch_url": "https://github.com/twbs/bootstrap/commit/2a5ba23ce8f041f3548317acc992ed8a736b609",
+        "commit_url": "https://github.com/twbs/bootstrap/commit/149096016"
+    },
+    {
+        "cve_id": "CVE-2019-10742",
+        "patch_id": "acabfbdf00a58bb866c9d070e8a10d1d0dbeb57",
+        "commit_id": "0d4fca0",
+        "patch_url": "https://github.com/axios/axios/commit/acabfbdf00a58bb866c9d070e8a10d1d0dbeb57",
+        "commit_url": "https://github.com/axios/axios/commit/0d4fca0"
+    },
+    {
+        "cve_id": "CVE-2019-10773",
+        "patch_id": "cefe4c529816f94cfefbb78c1b0d16d7da895b6",
+        "commit_id": "039bafd7",
+        "patch_url": "https://github.com/yarnpkg/yarn/commit/cefe4c529816f94cfefbb78c1b0d16d7da895b6",
+        "commit_url": "https://github.com/yarnpkg/yarn/commit/039bafd7"
+    },
+    {
+        "cve_id": "CVE-2019-10806",
+        "patch_id": "8f33a0b5170d7de4f12fc248ec0901234342367",
+        "commit_id": "f060109f",
+        "patch_url": "https://github.com/vega/vega/commit/8f33a0b5170d7de4f12fc248ec0901234342367",
+        "commit_url": "https://github.com/vega/vega/commit/f060109f"
+    },
+    {
+        "cve_id": "CVE-2019-12041",
+        "patch_id": "287dfbf22e70790c8b709ae37a5be0523597673",
+        "commit_id": "30e2bf0",
+        "patch_url": "https://github.com/jonschlinkert/remarkable/commit/287dfbf22e70790c8b709ae37a5be0523597673",
+        "commit_url": "https://github.com/jonschlinkert/remarkable/commit/30e2bf0"
+    },
+    {
+        "cve_id": "CVE-2019-13970",
+        "patch_id": "4b932e81447b4b0475f4fce45525547395c249d",
+        "commit_id": "2c6b8ba3",
+        "patch_url": "https://github.com/AntSwordProject/antSword/commit/4b932e81447b4b0475f4fce45525547395c249d",
+        "commit_url": "https://github.com/AntSwordProject/antSword/commit/2c6b8ba3"
+    },
+    {
+        "cve_id": "CVE-2019-14772",
+        "patch_id": "5abf71c5e5b1ad190b9cb489b85d96f5f801342",
+        "commit_id": "7686417f2",
+        "patch_url": "https://github.com/verdaccio/verdaccio/commit/5abf71c5e5b1ad190b9cb489b85d96f5f801342",
+        "commit_url": "https://github.com/verdaccio/verdaccio/commit/7686417f2"
+    },
+    {
+        "cve_id": "CVE-2019-20920",
+        "patch_id": "198887808780bbef9dba67a8af68ece091d5baa",
+        "commit_id": "d5caa56",
+        "patch_url": "https://github.com/wycats/handlebars.js/commit/198887808780bbef9dba67a8af68ece091d5baa",
+        "commit_url": "https://github.com/wycats/handlebars.js/commit/d5caa56"
+    },
+    {
+        "cve_id": "CVE-2019-20922",
+        "patch_id": "8d5530ee2c3ea9f0aee3fde310b9f36887d00b8",
+        "commit_id": "fd2e5c9",
+        "patch_url": "https://github.com/handlebars-lang/handlebars.js/commit/8d5530ee2c3ea9f0aee3fde310b9f36887d00b8",
+        "commit_url": "https://github.com/handlebars-lang/handlebars.js/commit/fd2e5c9"
+    },
+    {
+        "cve_id": "CVE-2019-2391",
+        "patch_id": "3809c1313a7b2a8001065f0271199df9fa3d16a",
+        "commit_id": "f4b16d9",
+        "patch_url": "https://github.com/mongodb/js-bson/commit/3809c1313a7b2a8001065f0271199df9fa3d16a",
+        "commit_url": "https://github.com/mongodb/js-bson/commit/f4b16d9"
+    },
+    {
+        "cve_id": "CVE-2019-9737",
+        "patch_id": "f5cb82c39400294a75f4b5b9e997e4939cee708",
+        "commit_id": "7d12de6",
+        "patch_url": "https://github.com/alromh87/editor.md/commit/f5cb82c39400294a75f4b5b9e997e4939cee708",
+        "commit_url": "https://github.com/alromh87/editor.md/commit/7d12de6"
+    },
+    {
+        "cve_id": "CVE-2020-11020",
+        "patch_id": "65d297d341b607f3cb0b5fa6021a625a991cc30",
+        "commit_id": "4e293c7",
+        "patch_url": "https://github.com/faye/faye/commit/65d297d341b607f3cb0b5fa6021a625a991cc30",
+        "commit_url": "https://github.com/faye/faye/commit/4e293c7"
+    },
+    {
+        "cve_id": "CVE-2020-12827",
+        "patch_id": "30e29ed2cdaec8684d60a6d12ea07b611c765a1",
+        "commit_id": "743493c8",
+        "patch_url": "https://github.com/mjmlio/mjml/commit/30e29ed2cdaec8684d60a6d12ea07b611c765a1",
+        "commit_url": "https://github.com/mjmlio/mjml/commit/743493c8"
+    },
+    {
+        "cve_id": "CVE-2019-14329",
+        "patch_id": "4ab7d19776011288b875abd3eef1e1f6f75289e",
+        "commit_id": "0d4b548160",
+        "patch_url": "https://github.com/espocrm/espocrm/commit/4ab7d19776011288b875abd3eef1e1f6f75289e",
+        "commit_url": "https://github.com/espocrm/espocrm/commit/0d4b548160"
+    },
+    {
+        "cve_id": "CVE-2019-14330",
+        "patch_id": "4ab7d19776011288b875abd3eef1e1f6f75289e",
+        "commit_id": "0d4b548160",
+        "patch_url": "https://github.com/espocrm/espocrm/commit/4ab7d19776011288b875abd3eef1e1f6f75289e",
+        "commit_url": "https://github.com/espocrm/espocrm/commit/0d4b548160"
+    },
+    {
+        "cve_id": "CVE-2019-14331",
+        "patch_id": "4ab7d19776011288b875abd3eef1e1f6f75289e",
+        "commit_id": "0d4b548160",
+        "patch_url": "https://github.com/espocrm/espocrm/commit/4ab7d19776011288b875abd3eef1e1f6f75289e",
+        "commit_url": "https://github.com/espocrm/espocrm/commit/0d4b548160"
+    },
+    {
+        "cve_id": "CVE-2019-15605",
+        "patch_id": "7fc565666",
+        "commit_id": "45c2e2514f",
+        "patch_url": "https://github.com/nodejs/node/commit/7fc565666",
+        "commit_url": "https://github.com/nodejs/node/commit/45c2e2514f"
+    },
+    {
+        "cve_id": "CVE-2020-15152",
+        "patch_id": "fb32b012c3baf48ee804e1dc36544cbba70b00d",
+        "commit_id": "a8cdcb0",
+        "patch_url": "https://github.com/autovance/ftp-srv/commit/fb32b012c3baf48ee804e1dc36544cbba70b00d",
+        "commit_url": "https://github.com/autovance/ftp-srv/commit/a8cdcb0"
+    },
+    {
+        "cve_id": "CVE-2020-26237",
+        "patch_id": "7241013ae011a585983e176ddc0489a7a52f6bb",
+        "commit_id": "d8692db1",
+        "patch_url": "https://github.com/highlightjs/highlight.js/commit/7241013ae011a585983e176ddc0489a7a52f6bb",
+        "commit_url": "https://github.com/highlightjs/highlight.js/commit/d8692db1"
+    },
+    {
+        "cve_id": "CVE-2020-28481",
+        "patch_id": "f78a575f66ab693c3ea96ea88429ddb1a44c86c",
+        "commit_id": "a8c06006",
+        "patch_url": "https://github.com/socketio/socket.io/commit/f78a575f66ab693c3ea96ea88429ddb1a44c86c",
+        "commit_url": "https://github.com/socketio/socket.io/commit/a8c06006"
+    },
+    {
+        "cve_id": "CVE-2020-4051",
+        "patch_id": "d162a7761d13609f3d49458a281e5a769ca0f52",
+        "commit_id": "7d9d4927",
+        "patch_url": "https://github.com/dojo/dijit/commit/d162a7761d13609f3d49458a281e5a769ca0f52",
+        "commit_url": "https://github.com/dojo/dijit/commit/7d9d4927"
+    },
+    {
+        "cve_id": "CVE-2020-5258",
+        "patch_id": "d8aa86837961ba963070ecd127a61876ec2f4f0",
+        "commit_id": "20a00afb",
+        "patch_url": "https://github.com/dojo/dojo/commit/d8aa86837961ba963070ecd127a61876ec2f4f0",
+        "commit_url": "https://github.com/dojo/dojo/commit/20a00afb"
+    },
+    {
+        "cve_id": "CVE-2020-5259",
+        "patch_id": "c5901be1dfbe66b787159600e6824e3dd799fd2",
+        "commit_id": "47d1b302b",
+        "patch_url": "https://github.com/dojo/dojox/commit/c5901be1dfbe66b787159600e6824e3dd799fd2",
+        "commit_url": "https://github.com/dojo/dojox/commit/47d1b302b"
+    },
+    {
+        "cve_id": "CVE-2020-15149",
+        "patch_id": "c2477d9d5ffc43e5ffeb537ea2ceb4ce9592aa3",
+        "commit_id": "16cee1b03b",
+        "patch_url": "https://github.com/NodeBB/NodeBB/commit/c2477d9d5ffc43e5ffeb537ea2ceb4ce9592aa3",
+        "commit_url": "https://github.com/NodeBB/NodeBB/commit/16cee1b03b"
+    },
+    {
+        "cve_id": "CVE-2020-7596",
+        "patch_id": "2f4eff90dd21e58dd56074dc4933b15a91373de",
+        "commit_id": "acd92f4",
+        "patch_url": "https://github.com/codecov/codecov-node/commit/2f4eff90dd21e58dd56074dc4933b15a91373de",
+        "commit_url": "https://github.com/codecov/codecov-node/commit/acd92f4"
+    },
+    {
+        "cve_id": "CVE-2020-7608",
+        "patch_id": "c893d3072f7d31243b750b1d599b0826b8aaefa",
+        "commit_id": "63810ca",
+        "patch_url": "https://github.com/yargs/yargs-parser/commit/c893d3072f7d31243b750b1d599b0826b8aaefa",
+        "commit_url": "https://github.com/yargs/yargs-parser/commit/63810ca"
+    },
+    {
+        "cve_id": "CVE-2020-7610",
+        "patch_id": "3809c1313a7b2a8001065f0271199df9fa3d16a",
+        "commit_id": "f4b16d9",
+        "patch_url": "https://github.com/mongodb/js-bson/commit/3809c1313a7b2a8001065f0271199df9fa3d16a",
+        "commit_url": "https://github.com/mongodb/js-bson/commit/f4b16d9"
+    },
+    {
+        "cve_id": "CVE-2020-7632",
+        "patch_id": "13ea0bd0a43f848bf34f936088e52f88d9d4e35",
+        "commit_id": "bbd0e39",
+        "patch_url": "https://github.com/j-holub/Node-MPV/commit/13ea0bd0a43f848bf34f936088e52f88d9d4e35",
+        "commit_url": "https://github.com/j-holub/Node-MPV/commit/bbd0e39"
+    },
+    {
+        "cve_id": "CVE-2020-7719",
+        "patch_id": "0eb16d8541838e80f3c2340a9ef93ded7c97290",
+        "commit_id": "f2868ae0e",
+        "patch_url": "https://github.com/locutusjs/locutus/commit/0eb16d8541838e80f3c2340a9ef93ded7c97290",
+        "commit_url": "https://github.com/locutusjs/locutus/commit/f2868ae0e"
+    },
+    {
+        "cve_id": "CVE-2020-7746",
+        "patch_id": "1d92605aa6c29add400c4c551413fc2306c15e8",
+        "commit_id": "73b4e82f",
+        "patch_url": "https://github.com/chartjs/Chart.js/commit/1d92605aa6c29add400c4c551413fc2306c15e8",
+        "commit_url": "https://github.com/chartjs/Chart.js/commit/73b4e82f"
+    },
+    {
+        "cve_id": "CVE-2020-7789",
+        "patch_id": "b9d148d697d3db807f653e2e6953c3de57dfeb8",
+        "commit_id": "2d3927b",
+        "patch_url": "https://github.com/mikaelbr/node-notifier/commit/b9d148d697d3db807f653e2e6953c3de57dfeb8",
+        "commit_url": "https://github.com/mikaelbr/node-notifier/commit/2d3927b"
+    },
+    {
+        "cve_id": "CVE-2020-8116",
+        "patch_id": "c914124f418f55edea27928e89c94d931babe58",
+        "commit_id": "b6181b3",
+        "patch_url": "https://github.com/sindresorhus/dot-prop/commit/c914124f418f55edea27928e89c94d931babe58",
+        "commit_url": "https://github.com/sindresorhus/dot-prop/commit/b6181b3"
+    },
+    {
+        "cve_id": "CVE-2020-4076",
+        "patch_id": "c87b474496c35580ebbeab13f9c8c982b4eab4d",
+        "commit_id": "57d088517c",
+        "patch_url": "https://github.com/electron/electron/commit/c87b474496c35580ebbeab13f9c8c982b4eab4d",
+        "commit_url": "https://github.com/electron/electron/commit/57d088517c"
+    },
+    {
+        "cve_id": "CVE-2020-4077",
+        "patch_id": "c87b474496c35580ebbeab13f9c8c982b4eab4d",
+        "commit_id": "57d088517c",
+        "patch_url": "https://github.com/electron/electron/commit/c87b474496c35580ebbeab13f9c8c982b4eab4d",
+        "commit_url": "https://github.com/electron/electron/commit/57d088517c"
+    },
+    {
+        "cve_id": "CVE-2020-8244",
+        "patch_id": "dacc4ac7d5fcd6201bcf26fbd886951be953746",
+        "commit_id": "d3e240e",
+        "patch_url": "https://github.com/rvagg/bl/commit/dacc4ac7d5fcd6201bcf26fbd886951be953746",
+        "commit_url": "https://github.com/rvagg/bl/commit/d3e240e"
+    },
+    {
+        "cve_id": "CVE-2020-8251",
+        "patch_id": "753f3b247ae2d24fee0b3f48b9ec3a5c308f065",
+        "commit_id": "ba22c013a2",
+        "patch_url": "https://github.com/nodejs/node/commit/753f3b247ae2d24fee0b3f48b9ec3a5c308f065",
+        "commit_url": "https://github.com/nodejs/node/commit/ba22c013a2"
+    },
+    {
+        "cve_id": "CVE-2021-21283",
+        "patch_id": "7ebd30462bd405c4c0570b93a6d48710e6c3db1",
+        "commit_id": "4f36f36",
+        "patch_url": "https://github.com/flarum/sticky/commit/7ebd30462bd405c4c0570b93a6d48710e6c3db1",
+        "commit_url": "https://github.com/flarum/sticky/commit/4f36f36"
+    },
+    {
+        "cve_id": "CVE-2020-8172",
+        "patch_id": "94571c100131bda7d8780d2b789feecb98ef65d",
+        "commit_id": "4cf6fabce2",
+        "patch_url": "https://github.com/nodejs/node/commit/94571c100131bda7d8780d2b789feecb98ef65d",
+        "commit_url": "https://github.com/nodejs/node/commit/4cf6fabce2"
+    },
+    {
+        "cve_id": "CVE-2021-23369",
+        "patch_id": "f0589701698268578199be25285b2ebea1c1e42",
+        "commit_id": "3fb331e",
+        "patch_url": "https://github.com/handlebars-lang/handlebars.js/commit/f0589701698268578199be25285b2ebea1c1e42",
+        "commit_url": "https://github.com/handlebars-lang/handlebars.js/commit/3fb331e"
+    },
+    {
+        "cve_id": "CVE-2021-23383",
+        "patch_id": "f0589701698268578199be25285b2ebea1c1e42",
+        "commit_id": "3fb331e",
+        "patch_url": "https://github.com/handlebars-lang/handlebars.js/commit/f0589701698268578199be25285b2ebea1c1e42",
+        "commit_url": "https://github.com/handlebars-lang/handlebars.js/commit/3fb331e"
+    },
+    {
+        "cve_id": "CVE-2021-23388",
+        "patch_id": "d4bd5b5febfe49c1f585f162e04ec810f8dc47a",
+        "commit_id": "c03dd1e",
+        "patch_url": "https://github.com/caolan/forms/commit/d4bd5b5febfe49c1f585f162e04ec810f8dc47a",
+        "commit_url": "https://github.com/caolan/forms/commit/c03dd1e"
+    },
+    {
+        "cve_id": "CVE-2021-27290",
+        "patch_id": "b30dfdb00bb94ddc49a25a85a18fb27afafdfbb",
+        "commit_id": "76e2233",
+        "patch_url": "https://github.com/npm/ssri/commit/b30dfdb00bb94ddc49a25a85a18fb27afafdfbb",
+        "commit_url": "https://github.com/npm/ssri/commit/76e2233"
+    },
+    {
+        "cve_id": "CVE-2021-25979",
+        "patch_id": "c211b211f9f4303a77a307cf41aac9b4ef8d2c7",
+        "commit_id": "2a054d39c",
+        "patch_url": "https://github.com/apostrophecms/apostrophe/commit/c211b211f9f4303a77a307cf41aac9b4ef8d2c7",
+        "commit_url": "https://github.com/apostrophecms/apostrophe/commit/2a054d39c"
+    },
+    {
+        "cve_id": "CVE-2021-32012",
+        "patch_id": "3542d62fffc155dd505a23230ba182c4402a0e2",
+        "commit_id": "577070b",
+        "patch_url": "https://github.com/SheetJS/sheetjs/commit/3542d62fffc155dd505a23230ba182c4402a0e2",
+        "commit_url": "https://github.com/SheetJS/sheetjs/commit/577070b"
+    },
+    {
+        "cve_id": "CVE-2021-32013",
+        "patch_id": "3542d62fffc155dd505a23230ba182c4402a0e2",
+        "commit_id": "577070b",
+        "patch_url": "https://github.com/SheetJS/sheetjs/commit/3542d62fffc155dd505a23230ba182c4402a0e2",
+        "commit_url": "https://github.com/SheetJS/sheetjs/commit/577070b"
+    },
+    {
+        "cve_id": "CVE-2021-32014",
+        "patch_id": "3542d62fffc155dd505a23230ba182c4402a0e2",
+        "commit_id": "577070b",
+        "patch_url": "https://github.com/SheetJS/sheetjs/commit/3542d62fffc155dd505a23230ba182c4402a0e2",
+        "commit_url": "https://github.com/SheetJS/sheetjs/commit/577070b"
+    },
+    {
+        "cve_id": "CVE-2021-32640",
+        "patch_id": "76d47c1479002022a3e4357b3c9f0e23a68d4cd",
+        "commit_id": "00c425ec",
+        "patch_url": "https://github.com/websockets/ws/commit/76d47c1479002022a3e4357b3c9f0e23a68d4cd",
+        "commit_url": "https://github.com/websockets/ws/commit/00c425ec"
+    },
+    {
+        "cve_id": "CVE-2021-23446",
+        "patch_id": "aa7653c02d97e9e2fd3e4b56d3e07e7095df5bb",
+        "commit_id": "7323f3d08",
+        "patch_url": "https://github.com/handsontable/handsontable/commit/aa7653c02d97e9e2fd3e4b56d3e07e7095df5bb",
+        "commit_url": "https://github.com/handsontable/handsontable/commit/7323f3d08"
+    },
+    {
+        "cve_id": "CVE-2020-9038",
+        "patch_id": "3db47b575b9cb0a765da3d283baa2c065df0d0b",
+        "commit_id": "26bf7c4d4",
+        "patch_url": "https://github.com/laurent22/joplin/commit/3db47b575b9cb0a765da3d283baa2c065df0d0b",
+        "commit_url": "https://github.com/laurent22/joplin/commit/26bf7c4d4"
+    },
+    {
+        "cve_id": "CVE-2021-37701",
+        "patch_id": "ab3e9036dc4504413fb6f154ea6943af5c187e2",
+        "commit_id": "114c7ac",
+        "patch_url": "https://github.com/npm/node-tar/commit/ab3e9036dc4504413fb6f154ea6943af5c187e2",
+        "commit_url": "https://github.com/npm/node-tar/commit/114c7ac"
+    },
+    {
+        "cve_id": "CVE-2021-37712",
+        "patch_id": "d56f790bda9fea807dd80c5083f24771dbdd6eb",
+        "commit_id": "88bd796",
+        "patch_url": "https://github.com/npm/node-tar/commit/d56f790bda9fea807dd80c5083f24771dbdd6eb",
+        "commit_url": "https://github.com/npm/node-tar/commit/88bd796"
+    },
+    {
+        "cve_id": "CVE-2021-3807",
+        "patch_id": "c3c0b3f2736b9c01feec0fef33980c43720dcde",
+        "commit_id": "9cba40d",
+        "patch_url": "https://github.com/chalk/ansi-regex/commit/c3c0b3f2736b9c01feec0fef33980c43720dcde",
+        "commit_url": "https://github.com/chalk/ansi-regex/commit/9cba40d"
+    },
+    {
+        "cve_id": "CVE-2021-39187",
+        "patch_id": "6ae5835b1915c302ebfd56ca200f05c83241c16",
+        "commit_id": "308668c8",
+        "patch_url": "https://github.com/parse-community/parse-server/commit/6ae5835b1915c302ebfd56ca200f05c83241c16",
+        "commit_url": "https://github.com/parse-community/parse-server/commit/308668c8"
+    },
+    {
+        "cve_id": "CVE-2021-41109",
+        "patch_id": "4ac4b7f71002ed4fbedbb901db1f6ed1e9ac555",
+        "commit_id": "834ae366",
+        "patch_url": "https://github.com/parse-community/parse-server/commit/4ac4b7f71002ed4fbedbb901db1f6ed1e9ac555",
+        "commit_url": "https://github.com/parse-community/parse-server/commit/834ae366"
+    },
+    {
+        "cve_id": "CVE-2020-1920",
+        "patch_id": "ca09ae82715e33c9ac77b3fa55495cf84ba891c",
+        "commit_id": "33ef82ce6df",
+        "patch_url": "https://github.com/facebook/react-native/commit/ca09ae82715e33c9ac77b3fa55495cf84ba891c",
+        "commit_url": "https://github.com/facebook/react-native/commit/33ef82ce6df"
+    },
+    {
+        "cve_id": "CVE-2021-41169",
+        "patch_id": "20007ac70a3af3c9e53a6acb0ef8794b6564244",
+        "commit_id": "4da1b7d692",
+        "patch_url": "https://github.com/sulu/sulu/commit/20007ac70a3af3c9e53a6acb0ef8794b6564244",
+        "commit_url": "https://github.com/sulu/sulu/commit/4da1b7d692"
+    },
+    {
+        "cve_id": "CVE-2021-44906",
+        "patch_id": "ef9153fc52b6cea0744b2239921c5dcae4697f1",
+        "commit_id": "c2b9819",
+        "patch_url": "https://github.com/minimistjs/minimist/commit/ef9153fc52b6cea0744b2239921c5dcae4697f1",
+        "commit_url": "https://github.com/minimistjs/minimist/commit/c2b9819"
+    },
+    {
+        "cve_id": "CVE-2022-0144",
+        "patch_id": "d919d22dd6de385edaa9d90313075a77f74b338",
+        "commit_id": "003a39d",
+        "patch_url": "https://github.com/shelljs/shelljs/commit/d919d22dd6de385edaa9d90313075a77f74b338",
+        "commit_url": "https://github.com/shelljs/shelljs/commit/003a39d"
+    },
+    {
+        "cve_id": "CVE-2022-1178",
+        "patch_id": "347ad614507183035d188ba14427bc162419778",
+        "commit_id": "4d74dbfa3",
+        "patch_url": "https://github.com/openemr/openemr/commit/347ad614507183035d188ba14427bc162419778",
+        "commit_url": "https://github.com/openemr/openemr/commit/4d74dbfa3"
+    },
+    {
+        "cve_id": "CVE-2022-1179",
+        "patch_id": "347ad614507183035d188ba14427bc162419778",
+        "commit_id": "4d74dbfa3",
+        "patch_url": "https://github.com/openemr/openemr/commit/347ad614507183035d188ba14427bc162419778",
+        "commit_url": "https://github.com/openemr/openemr/commit/4d74dbfa3"
+    },
+    {
+        "cve_id": "CVE-2022-1180",
+        "patch_id": "347ad614507183035d188ba14427bc162419778",
+        "commit_id": "4d74dbfa3",
+        "patch_url": "https://github.com/openemr/openemr/commit/347ad614507183035d188ba14427bc162419778",
+        "commit_url": "https://github.com/openemr/openemr/commit/4d74dbfa3"
+    },
+    {
+        "cve_id": "CVE-2022-1181",
+        "patch_id": "2835cc397610fc28037302dad948c38fda03202",
+        "commit_id": "4d74dbfa3",
+        "patch_url": "https://github.com/openemr/openemr/commit/2835cc397610fc28037302dad948c38fda03202",
+        "commit_url": "https://github.com/openemr/openemr/commit/4d74dbfa3"
+    },
+    {
+        "cve_id": "CVE-2022-1575",
+        "patch_id": "f768ed73875d5eca20110b9c1d72f2789cd1bab",
+        "commit_id": "b124bc92",
+        "patch_url": "https://github.com/jgraph/drawio/commit/f768ed73875d5eca20110b9c1d72f2789cd1bab",
+        "commit_url": "https://github.com/jgraph/drawio/commit/b124bc92"
+    },
+    {
+        "cve_id": "CVE-2022-1723",
+        "patch_id": "7a68ebe22a64fe722704e9c4527791209fee203",
+        "commit_id": "b124bc92",
+        "patch_url": "https://github.com/jgraph/drawio/commit/7a68ebe22a64fe722704e9c4527791209fee203",
+        "commit_url": "https://github.com/jgraph/drawio/commit/b124bc92"
+    },
+    {
+        "cve_id": "CVE-2022-1767",
+        "patch_id": "c63f3a04450f30798df47f9badbc74eb8a69fbd",
+        "commit_id": "b124bc92",
+        "patch_url": "https://github.com/jgraph/drawio/commit/c63f3a04450f30798df47f9badbc74eb8a69fbd",
+        "commit_url": "https://github.com/jgraph/drawio/commit/b124bc92"
+    },
+    {
+        "cve_id": "CVE-2020-8134",
+        "patch_id": "47739396705519a36018686894d1373e9eb9221",
+        "commit_id": "b7fbd4e74e",
+        "patch_url": "https://github.com/TryGhost/Ghost/commit/47739396705519a36018686894d1373e9eb9221",
+        "commit_url": "https://github.com/TryGhost/Ghost/commit/b7fbd4e74e"
+    },
+    {
+        "cve_id": "CVE-2022-1774",
+        "patch_id": "c63f3a04450f30798df47f9badbc74eb8a69fbd",
+        "commit_id": "b124bc92",
+        "patch_url": "https://github.com/jgraph/drawio/commit/c63f3a04450f30798df47f9badbc74eb8a69fbd",
+        "commit_url": "https://github.com/jgraph/drawio/commit/b124bc92"
+    },
+    {
+        "cve_id": "CVE-2022-1784",
+        "patch_id": "c63f3a04450f30798df47f9badbc74eb8a69fbd",
+        "commit_id": "b124bc92",
+        "patch_url": "https://github.com/jgraph/drawio/commit/c63f3a04450f30798df47f9badbc74eb8a69fbd",
+        "commit_url": "https://github.com/jgraph/drawio/commit/b124bc92"
+    },
+    {
+        "cve_id": "CVE-2022-1815",
+        "patch_id": "c287bef9101d024b1fd59d55ecd530f25000f9d",
+        "commit_id": "b124bc92",
+        "patch_url": "https://github.com/jgraph/drawio/commit/c287bef9101d024b1fd59d55ecd530f25000f9d",
+        "commit_url": "https://github.com/jgraph/drawio/commit/b124bc92"
+    },
+    {
+        "cve_id": "CVE-2022-2014",
+        "patch_id": "3d3f819d7a04da7d53b37cc0ca4269c157ba282",
+        "commit_id": "b124bc92",
+        "patch_url": "https://github.com/jgraph/drawio/commit/3d3f819d7a04da7d53b37cc0ca4269c157ba282",
+        "commit_url": "https://github.com/jgraph/drawio/commit/b124bc92"
+    },
+    {
+        "cve_id": "CVE-2022-2015",
+        "patch_id": "3d3f819d7a04da7d53b37cc0ca4269c157ba282",
+        "commit_id": "b124bc92",
+        "patch_url": "https://github.com/jgraph/drawio/commit/3d3f819d7a04da7d53b37cc0ca4269c157ba282",
+        "commit_url": "https://github.com/jgraph/drawio/commit/b124bc92"
+    },
+    {
+        "cve_id": "CVE-2022-2112",
+        "patch_id": "26bf51c20a1c9b3130ac5dd2e17649bece5ff84",
+        "commit_id": "d5086b2fb",
+        "patch_url": "https://github.com/inventree/inventree/commit/26bf51c20a1c9b3130ac5dd2e17649bece5ff84",
+        "commit_url": "https://github.com/inventree/inventree/commit/d5086b2fb"
+    },
+    {
+        "cve_id": "CVE-2022-2111",
+        "patch_id": "26bf51c20a1c9b3130ac5dd2e17649bece5ff84",
+        "commit_id": "d5086b2fb",
+        "patch_url": "https://github.com/inventree/inventree/commit/26bf51c20a1c9b3130ac5dd2e17649bece5ff84",
+        "commit_url": "https://github.com/inventree/inventree/commit/d5086b2fb"
+    },
+    {
+        "cve_id": "CVE-2022-2113",
+        "patch_id": "26bf51c20a1c9b3130ac5dd2e17649bece5ff84",
+        "commit_id": "d5086b2fb",
+        "patch_url": "https://github.com/inventree/inventree/commit/26bf51c20a1c9b3130ac5dd2e17649bece5ff84",
+        "commit_url": "https://github.com/inventree/inventree/commit/d5086b2fb"
+    },
+    {
+        "cve_id": "CVE-2022-24304",
+        "patch_id": "a45cfb6b0ce0067ae9794cfa80f7917e1fb3c6f",
+        "commit_id": "6a1973165",
+        "patch_url": "https://github.com/Automattic/mongoose/commit/a45cfb6b0ce0067ae9794cfa80f7917e1fb3c6f",
+        "commit_url": "https://github.com/Automattic/mongoose/commit/6a1973165"
+    },
+    {
+        "cve_id": "CVE-2022-24760",
+        "patch_id": "886bfd7cac69496e3f73d4bb536f0eec3cba0e4",
+        "commit_id": "d21dd973",
+        "patch_url": "https://github.com/parse-community/parse-server/commit/886bfd7cac69496e3f73d4bb536f0eec3cba0e4",
+        "commit_url": "https://github.com/parse-community/parse-server/commit/d21dd973"
+    },
+    {
+        "cve_id": "CVE-2021-39192",
+        "patch_id": "1962591c2ed4d3cfd2f14cad7bfafe6cf0a2aac",
+        "commit_id": "8a40d8e76b",
+        "patch_url": "https://github.com/TryGhost/Ghost/commit/1962591c2ed4d3cfd2f14cad7bfafe6cf0a2aac",
+        "commit_url": "https://github.com/TryGhost/Ghost/commit/8a40d8e76b"
+    },
+    {
+        "cve_id": "CVE-2022-24875",
+        "patch_id": "46d98f2b1427fc6ba1c2bc443dc6688fd400f1f",
+        "commit_id": "f707e581",
+        "patch_url": "https://github.com/CVEProject/cve-services/commit/46d98f2b1427fc6ba1c2bc443dc6688fd400f1f",
+        "commit_url": "https://github.com/CVEProject/cve-services/commit/f707e581"
+    },
+    {
+        "cve_id": "CVE-2022-25858",
+        "patch_id": "d8cc5691be980d663c29cc4d5ce67e852d59701",
+        "commit_id": "3ab7bbf1",
+        "patch_url": "https://github.com/terser/terser/commit/d8cc5691be980d663c29cc4d5ce67e852d59701",
+        "commit_url": "https://github.com/terser/terser/commit/3ab7bbf1"
+    },
+    {
+        "cve_id": "CVE-2022-25878",
+        "patch_id": "b5f1391dff5515894830a6570e6d73f5511b2e8",
+        "commit_id": "64811d58",
+        "patch_url": "https://github.com/protobufjs/protobuf.js/commit/b5f1391dff5515894830a6570e6d73f5511b2e8",
+        "commit_url": "https://github.com/protobufjs/protobuf.js/commit/64811d58"
+    },
+    {
+        "cve_id": "CVE-2022-25883",
+        "patch_id": "928e56d21150da0413a3333a3148b20e741a920",
+        "commit_id": "abdd93d",
+        "patch_url": "https://github.com/npm/node-semver/commit/928e56d21150da0413a3333a3148b20e741a920",
+        "commit_url": "https://github.com/npm/node-semver/commit/abdd93d"
+    },
+    {
+        "cve_id": "CVE-2022-2564",
+        "patch_id": "a45cfb6b0ce0067ae9794cfa80f7917e1fb3c6f",
+        "commit_id": "6a1973165",
+        "patch_url": "https://github.com/automattic/mongoose/commit/a45cfb6b0ce0067ae9794cfa80f7917e1fb3c6f",
+        "commit_url": "https://github.com/automattic/mongoose/commit/6a1973165"
+    },
+    {
+        "cve_id": "CVE-2022-2822",
+        "patch_id": "82c892ba40b3741d1b7711d949e56af64f5bc2d",
+        "commit_id": "c87a7b685",
+        "patch_url": "https://github.com/octoprint/octoprint/commit/82c892ba40b3741d1b7711d949e56af64f5bc2d",
+        "commit_url": "https://github.com/octoprint/octoprint/commit/c87a7b685"
+    },
+    {
+        "cve_id": "CVE-2022-2888",
+        "patch_id": "40e6217ac1a85cc5ed592873ae49db01d3005da",
+        "commit_id": "20e0b8271",
+        "patch_url": "https://github.com/octoprint/octoprint/commit/40e6217ac1a85cc5ed592873ae49db01d3005da",
+        "commit_url": "https://github.com/octoprint/octoprint/commit/20e0b8271"
+    },
+    {
+        "cve_id": "CVE-2022-2930",
+        "patch_id": "1453076ee3e47fcab2dc73664ec2d61d3ef7fc4",
+        "commit_id": "2cbeb2714",
+        "patch_url": "https://github.com/octoprint/octoprint/commit/1453076ee3e47fcab2dc73664ec2d61d3ef7fc4",
+        "commit_url": "https://github.com/octoprint/octoprint/commit/2cbeb2714"
+    },
+    {
+        "cve_id": "CVE-2022-31083",
+        "patch_id": "ba2b0a9cb9a568817a114b132a4c2e0911d76df",
+        "commit_id": "75af9a26",
+        "patch_url": "https://github.com/parse-community/parse-server/commit/ba2b0a9cb9a568817a114b132a4c2e0911d76df",
+        "commit_url": "https://github.com/parse-community/parse-server/commit/75af9a26"
+    },
+    {
+        "cve_id": "CVE-2022-31089",
+        "patch_id": "5f423224bda8df32affc4ed829eaddd87e4cb62",
+        "commit_id": "4c9e9567",
+        "patch_url": "https://github.com/parse-community/parse-server/commit/5f423224bda8df32affc4ed829eaddd87e4cb62",
+        "commit_url": "https://github.com/parse-community/parse-server/commit/4c9e9567"
+    },
+    {
+        "cve_id": "CVE-2022-3225",
+        "patch_id": "d35864be0854216693a01307f81ffcabf6d549d",
+        "commit_id": "15de13fb69",
+        "patch_url": "https://github.com/budibase/budibase/commit/d35864be0854216693a01307f81ffcabf6d549d",
+        "commit_url": "https://github.com/budibase/budibase/commit/15de13fb69"
+    },
+    {
+        "cve_id": "CVE-2022-36079",
+        "patch_id": "e39d51bd329cd978589983bd659db46e1d45aad",
+        "commit_id": "4c0c7c77",
+        "patch_url": "https://github.com/parse-community/parse-server/commit/e39d51bd329cd978589983bd659db46e1d45aad",
+        "commit_url": "https://github.com/parse-community/parse-server/commit/4c0c7c77"
+    },
+    {
+        "cve_id": "CVE-2022-36313",
+        "patch_id": "d86835680f4cccbee1a60628783c36700ec9e25",
+        "commit_id": "2c4d120",
+        "patch_url": "https://github.com/sindresorhus/file-type/commit/d86835680f4cccbee1a60628783c36700ec9e25",
+        "commit_url": "https://github.com/sindresorhus/file-type/commit/2c4d120"
+    },
+    {
+        "cve_id": "CVE-2022-37616",
+        "patch_id": "7c0d4b7fbf74079060a2f135a369adeeccaf4b1",
+        "commit_id": "6956ec4",
+        "patch_url": "https://github.com/xmldom/xmldom/commit/7c0d4b7fbf74079060a2f135a369adeeccaf4b1",
+        "commit_url": "https://github.com/xmldom/xmldom/commit/6956ec4"
+    },
+    {
+        "cve_id": "CVE-2022-39225",
+        "patch_id": "7ca9ed01424478d299e5576ee4208bd9fea7876",
+        "commit_id": "83cdc89b",
+        "patch_url": "https://github.com/parse-community/parse-server/commit/7ca9ed01424478d299e5576ee4208bd9fea7876",
+        "commit_url": "https://github.com/parse-community/parse-server/commit/83cdc89b"
+    },
+    {
+        "cve_id": "CVE-2022-39231",
+        "patch_id": "ecf0814499bde31ab6082b6e42854aa65ad2e03",
+        "commit_id": "8c8ec715",
+        "patch_url": "https://github.com/parse-community/parse-server/commit/ecf0814499bde31ab6082b6e42854aa65ad2e03",
+        "commit_url": "https://github.com/parse-community/parse-server/commit/8c8ec715"
+    },
+    {
+        "cve_id": "CVE-2022-39313",
+        "patch_id": "c03908f74e5c9eed834874a89df6c89c1a1e849",
+        "commit_id": "4c1befab",
+        "patch_url": "https://github.com/parse-community/parse-server/commit/c03908f74e5c9eed834874a89df6c89c1a1e849",
+        "commit_url": "https://github.com/parse-community/parse-server/commit/4c1befab"
+    },
+    {
+        "cve_id": "CVE-2022-39353",
+        "patch_id": "c02f786216bed70825f9a351c65e61500f51e93",
+        "commit_id": "642c9e8",
+        "patch_url": "https://github.com/xmldom/xmldom/commit/c02f786216bed70825f9a351c65e61500f51e93",
+        "commit_url": "https://github.com/xmldom/xmldom/commit/642c9e8"
+    },
+    {
+        "cve_id": "CVE-2022-39357",
+        "patch_id": "bce4b59584abf961e9400af3d7a4fd7638e26c7",
+        "commit_id": "154a8c8d0",
+        "patch_url": "https://github.com/wintercms/winter/commit/bce4b59584abf961e9400af3d7a4fd7638e26c7",
+        "commit_url": "https://github.com/wintercms/winter/commit/154a8c8d0"
+    },
+    {
+        "cve_id": "CVE-2022-39396",
+        "patch_id": "50eed3cffe80fadfb4bdac52b2783a18da2cfc4",
+        "commit_id": "f3bcc936",
+        "patch_url": "https://github.com/parse-community/parse-server/commit/50eed3cffe80fadfb4bdac52b2783a18da2cfc4",
+        "commit_url": "https://github.com/parse-community/parse-server/commit/f3bcc936"
+    },
+    {
+        "cve_id": "CVE-2022-41878",
+        "patch_id": "6728da1e3591db1e27031d335d64d8f25546a06",
+        "commit_id": "d27dfa34",
+        "patch_url": "https://github.com/parse-community/parse-server/commit/6728da1e3591db1e27031d335d64d8f25546a06",
+        "commit_url": "https://github.com/parse-community/parse-server/commit/d27dfa34"
+    },
+    {
+        "cve_id": "CVE-2022-41879",
+        "patch_id": "6c63f04ba37174021082a5b5c4ba1556dcc954f",
+        "commit_id": "7cb266b2",
+        "patch_url": "https://github.com/parse-community/parse-server/commit/6c63f04ba37174021082a5b5c4ba1556dcc954f",
+        "commit_url": "https://github.com/parse-community/parse-server/commit/7cb266b2"
+    },
+    {
+        "cve_id": "CVE-2022-41919",
+        "patch_id": "cdba37dadb8a5b91c85a5b44943fcbfcb21ebd1",
+        "commit_id": "f7764474",
+        "patch_url": "https://github.com/fastify/fastify/commit/cdba37dadb8a5b91c85a5b44943fcbfcb21ebd1",
+        "commit_url": "https://github.com/fastify/fastify/commit/f7764474"
+    },
+    {
+        "cve_id": "CVE-2022-46165",
+        "patch_id": "73c52eafb6566435dffd979c3c49562b6d5a423",
+        "commit_id": "4e2bb58e2",
+        "patch_url": "https://github.com/syncthing/syncthing/commit/73c52eafb6566435dffd979c3c49562b6d5a423",
+        "commit_url": "https://github.com/syncthing/syncthing/commit/4e2bb58e2"
+    },
+    {
+        "cve_id": "CVE-2022-4882",
+        "patch_id": "4f11b6f6610acd6d89de5f8be47cf7c61064384",
+        "commit_id": "1b425d307",
+        "patch_url": "https://github.com/kaltura/mwEmbed/commit/4f11b6f6610acd6d89de5f8be47cf7c61064384",
+        "commit_url": "https://github.com/kaltura/mwEmbed/commit/1b425d307"
+    },
+    {
+        "cve_id": "CVE-2022-4615",
+        "patch_id": "d5eb41697f7f1bc2c7ee5bc9bbf58684e1c8cc1",
+        "commit_id": "fc44042dd",
+        "patch_url": "https://github.com/openemr/openemr/commit/d5eb41697f7f1bc2c7ee5bc9bbf58684e1c8cc1",
+        "commit_url": "https://github.com/openemr/openemr/commit/fc44042dd"
+    },
+    {
+        "cve_id": "CVE-2023-22467",
+        "patch_id": "612e0c778d2dedb947f3e5160c46601688ea495",
+        "commit_id": "5ab3bf64",
+        "patch_url": "https://github.com/moment/luxon/commit/612e0c778d2dedb947f3e5160c46601688ea495",
+        "commit_url": "https://github.com/moment/luxon/commit/5ab3bf64"
+    },
+    {
+        "cve_id": "CVE-2023-22474",
+        "patch_id": "e016d813e083ce6828f9abce245d15b681a224d",
+        "commit_id": "892040dc",
+        "patch_url": "https://github.com/parse-community/parse-server/commit/e016d813e083ce6828f9abce245d15b681a224d",
+        "commit_url": "https://github.com/parse-community/parse-server/commit/892040dc"
+    },
+    {
+        "cve_id": "CVE-2023-22579",
+        "patch_id": "d9e0728f2c2c5ae319f337c78091e1081440595",
+        "commit_id": "6c71dbd6a",
+        "patch_url": "https://github.com/sequelize/sequelize/commit/d9e0728f2c2c5ae319f337c78091e1081440595",
+        "commit_url": "https://github.com/sequelize/sequelize/commit/6c71dbd6a"
+    },
+    {
+        "cve_id": "CVE-2023-22732",
+        "patch_id": "cd7a89cbcd3a0428c6d1ef27b3aa15467a722ff",
+        "commit_id": "b745b4c3d3",
+        "patch_url": "https://github.com/shopware/platform/commit/cd7a89cbcd3a0428c6d1ef27b3aa15467a722ff",
+        "commit_url": "https://github.com/shopware/platform/commit/b745b4c3d3"
+    },
+    {
+        "cve_id": "CVE-2023-2328",
+        "patch_id": "e3562bfe249c557d15474c9a0acd5e06628521f",
+        "commit_id": "2001ce1bb9",
+        "patch_url": "https://github.com/pimcore/pimcore/commit/e3562bfe249c557d15474c9a0acd5e06628521f",
+        "commit_url": "https://github.com/pimcore/pimcore/commit/2001ce1bb9"
+    },
+    {
+        "cve_id": "CVE-2023-2342",
+        "patch_id": "42a5bbe5f16b97371fdbfdcf2bb3ee759dea856",
+        "commit_id": "0300316627",
+        "patch_url": "https://github.com/pimcore/pimcore/commit/42a5bbe5f16b97371fdbfdcf2bb3ee759dea856",
+        "commit_url": "https://github.com/pimcore/pimcore/commit/0300316627"
+    },
+    {
+        "cve_id": "CVE-2023-25576",
+        "patch_id": "ab949de4f60bb809f3ef1c301cea812cad90eef",
+        "commit_id": "85be81b",
+        "patch_url": "https://github.com/fastify/fastify-multipart/commit/ab949de4f60bb809f3ef1c301cea812cad90eef",
+        "commit_url": "https://github.com/fastify/fastify-multipart/commit/85be81b"
+    },
+    {
+        "cve_id": "CVE-2023-24182",
+        "patch_id": "aa7938d4cb3a3f889dead894ea19334ad07ade5",
+        "commit_id": "0186d7eae0",
+        "patch_url": "https://github.com/openwrt/luci/commit/aa7938d4cb3a3f889dead894ea19334ad07ade5",
+        "commit_url": "https://github.com/openwrt/luci/commit/0186d7eae0"
+    },
+    {
+        "cve_id": "CVE-2023-25813",
+        "patch_id": "ccaa3996047fe00048d5993ab2dd43ebadd4f78",
+        "commit_id": "428a85b13",
+        "patch_url": "https://github.com/sequelize/sequelize/commit/ccaa3996047fe00048d5993ab2dd43ebadd4f78",
+        "commit_url": "https://github.com/sequelize/sequelize/commit/428a85b13"
+    },
+    {
+        "cve_id": "CVE-2023-25825",
+        "patch_id": "e1028c1d7f23cc1e0941b7b37bb6ae5a0436430",
+        "commit_id": "44ebd8033",
+        "patch_url": "https://github.com/ZoneMinder/zoneminder/commit/e1028c1d7f23cc1e0941b7b37bb6ae5a0436430",
+        "commit_url": "https://github.com/ZoneMinder/zoneminder/commit/44ebd8033"
+    },
+    {
+        "cve_id": "CVE-2023-26493",
+        "patch_id": "6d06aefa2684e20da79e7ceaf41f728c1a8d7a4",
+        "commit_id": "a20fc2d837",
+        "patch_url": "https://github.com/cocos/cocos-engine/commit/6d06aefa2684e20da79e7ceaf41f728c1a8d7a4",
+        "commit_url": "https://github.com/cocos/cocos-engine/commit/a20fc2d837"
+    },
+    {
+        "cve_id": "CVE-2023-27588",
+        "patch_id": "dda54543ee1ecf647ca5d0971b140c3a7b9f415",
+        "commit_id": "b0c200d21b",
+        "patch_url": "https://github.com/hasura/graphql-engine/commit/dda54543ee1ecf647ca5d0971b140c3a7b9f415",
+        "commit_url": "https://github.com/hasura/graphql-engine/commit/b0c200d21b"
+    },
+    {
+        "cve_id": "CVE-2019-7609",
+        "patch_id": "6e63c2c944d8aaa8d2a02904d6f7acf482a0dfd",
+        "commit_id": "74d88580a5e",
+        "patch_url": "https://github.com/elastic/kibana/commit/6e63c2c944d8aaa8d2a02904d6f7acf482a0dfd",
+        "commit_url": "https://github.com/elastic/kibana/commit/74d88580a5e"
+    },
+    {
+        "cve_id": "CVE-2023-2850",
+        "patch_id": "a5d92da9ddac5607ab7f737520a66eaed6d3dde",
+        "commit_id": "885b83e509",
+        "patch_url": "https://github.com/NodeBB/NodeBB/commit/a5d92da9ddac5607ab7f737520a66eaed6d3dde",
+        "commit_url": "https://github.com/NodeBB/NodeBB/commit/885b83e509"
+    },
+    {
+        "cve_id": "CVE-2023-32313",
+        "patch_id": "5206ba25afd86ef547a2c9d48d46ca7a9e6ec23",
+        "commit_id": "9e2b605",
+        "patch_url": "https://github.com/patriksimek/vm2/commit/5206ba25afd86ef547a2c9d48d46ca7a9e6ec23",
+        "commit_url": "https://github.com/patriksimek/vm2/commit/9e2b605"
+    },
+    {
+        "cve_id": "CVE-2023-32695",
+        "patch_id": "ee006607495eca4ec7262ad080dd3a91439a5ba",
+        "commit_id": "78f9fc2",
+        "patch_url": "https://github.com/socketio/socket.io-parser/commit/ee006607495eca4ec7262ad080dd3a91439a5ba",
+        "commit_url": "https://github.com/socketio/socket.io-parser/commit/78f9fc2"
+    },
+    {
+        "cve_id": "CVE-2023-3398",
+        "patch_id": "064729fec4262f9373d9fdcafda0be47cd18dd5",
+        "commit_id": "b124bc92",
+        "patch_url": "https://github.com/jgraph/drawio/commit/064729fec4262f9373d9fdcafda0be47cd18dd5",
+        "commit_url": "https://github.com/jgraph/drawio/commit/b124bc92"
+    },
+    {
+        "cve_id": "CVE-2023-36475",
+        "patch_id": "5fad2928fb8ee17304abcdcf259932f827d8c81",
+        "commit_id": "31805c96",
+        "patch_url": "https://github.com/parse-community/parse-server/commit/5fad2928fb8ee17304abcdcf259932f827d8c81",
+        "commit_url": "https://github.com/parse-community/parse-server/commit/31805c96"
+    },
+    {
+        "cve_id": "CVE-2023-3696",
+        "patch_id": "305ce4ff789261df7e3f6e72363d0703e025f80",
+        "commit_id": "e29578d2e",
+        "patch_url": "https://github.com/automattic/mongoose/commit/305ce4ff789261df7e3f6e72363d0703e025f80",
+        "commit_url": "https://github.com/automattic/mongoose/commit/e29578d2e"
+    },
+    {
+        "cve_id": "CVE-2023-36456",
+        "patch_id": "c07a48a3eccbd7b23026f72136d3392bbc6f795",
+        "commit_id": "6b2fced1b",
+        "patch_url": "https://github.com/goauthentik/authentik/commit/c07a48a3eccbd7b23026f72136d3392bbc6f795",
+        "commit_url": "https://github.com/goauthentik/authentik/commit/6b2fced1b"
+    },
+    {
+        "cve_id": "CVE-2023-3821",
+        "patch_id": "92811f07d39e4ad95c92003868f5f7309489d79",
+        "commit_id": "c8a4502550",
+        "patch_url": "https://github.com/pimcore/pimcore/commit/92811f07d39e4ad95c92003868f5f7309489d79",
+        "commit_url": "https://github.com/pimcore/pimcore/commit/c8a4502550"
+    },
+    {
+        "cve_id": "CVE-2023-3973",
+        "patch_id": "1db2c2c653aa245d175d30c210239e3946bfcb9",
+        "commit_id": "b124bc92",
+        "patch_url": "https://github.com/jgraph/drawio/commit/1db2c2c653aa245d175d30c210239e3946bfcb9",
+        "commit_url": "https://github.com/jgraph/drawio/commit/b124bc92"
+    },
+    {
+        "cve_id": "CVE-2023-31133",
+        "patch_id": "b3caf16005289cc9909488391b4a26f3f4a66a9",
+        "commit_id": "a22717a8e7",
+        "patch_url": "https://github.com/TryGhost/Ghost/commit/b3caf16005289cc9909488391b4a26f3f4a66a9",
+        "commit_url": "https://github.com/TryGhost/Ghost/commit/a22717a8e7"
+    },
+    {
+        "cve_id": "CVE-2023-41037",
+        "patch_id": "8aa633c7733981cf8b1da3ec17bce18c2628acc",
+        "commit_id": "11b59994",
+        "patch_url": "https://github.com/openpgpjs/openpgpjs/commit/8aa633c7733981cf8b1da3ec17bce18c2628acc",
+        "commit_url": "https://github.com/openpgpjs/openpgpjs/commit/11b59994"
+    },
+    {
+        "cve_id": "CVE-2023-42282",
+        "patch_id": "6a3ada9b471b09d5f0f5be264911ab564bf6789",
+        "commit_id": "32f468f",
+        "patch_url": "https://github.com/indutny/node-ip/commit/6a3ada9b471b09d5f0f5be264911ab564bf6789",
+        "commit_url": "https://github.com/indutny/node-ip/commit/32f468f"
+    },
+    {
+        "cve_id": "CVE-2023-41058",
+        "patch_id": "be4c7e23c63a2fb690685665cebed0de26be05c",
+        "commit_id": "739ffbed",
+        "patch_url": "https://github.com/parse-community/parse-server/commit/be4c7e23c63a2fb690685665cebed0de26be05c",
+        "commit_url": "https://github.com/parse-community/parse-server/commit/739ffbed"
+    },
+    {
+        "cve_id": "CVE-2023-44400",
+        "patch_id": "88afab6571ef7d4d41bb395cdb6ecd3968835a4",
+        "commit_id": "076331bf",
+        "patch_url": "https://github.com/louislam/uptime-kuma/commit/88afab6571ef7d4d41bb395cdb6ecd3968835a4",
+        "commit_url": "https://github.com/louislam/uptime-kuma/commit/076331bf"
+    },
+    {
+        "cve_id": "CVE-2023-45311",
+        "patch_id": "909af26846834642c81d19f4148afa3b7557b05",
+        "commit_id": "39500c8",
+        "patch_url": "https://github.com/fsevents/fsevents/commit/909af26846834642c81d19f4148afa3b7557b05",
+        "commit_url": "https://github.com/fsevents/fsevents/commit/39500c8"
+    },
+    {
+        "cve_id": "CVE-2023-46119",
+        "patch_id": "fd86278919556d3682e7e2c856dfccd5beffbfc",
+        "commit_id": "ea57a770",
+        "patch_url": "https://github.com/parse-community/parse-server/commit/fd86278919556d3682e7e2c856dfccd5beffbfc",
+        "commit_url": "https://github.com/parse-community/parse-server/commit/ea57a770"
+    },
+    {
+        "cve_id": "CVE-2023-46249",
+        "patch_id": "ea75741ec22ecef34bc7073f1163e17a8a2bf9f",
+        "commit_id": "85bb63824",
+        "patch_url": "https://github.com/goauthentik/authentik/commit/ea75741ec22ecef34bc7073f1163e17a8a2bf9f",
+        "commit_url": "https://github.com/goauthentik/authentik/commit/85bb63824"
+    },
+    {
+        "cve_id": "CVE-2023-46730",
+        "patch_id": "99205535e8cec6592fd7f1469837926f27c72d5",
+        "commit_id": "2ade20949",
+        "patch_url": "https://github.com/Intermesh/groupoffice/commit/99205535e8cec6592fd7f1469837926f27c72d5",
+        "commit_url": "https://github.com/Intermesh/groupoffice/commit/2ade20949"
+    },
+    {
+        "cve_id": "CVE-2023-49276",
+        "patch_id": "f28dccf4e11f041564293e4f407e69ab9ee2277",
+        "commit_id": "bbaba292",
+        "patch_url": "https://github.com/louislam/uptime-kuma/commit/f28dccf4e11f041564293e4f407e69ab9ee2277",
+        "commit_url": "https://github.com/louislam/uptime-kuma/commit/bbaba292"
+    },
+    {
+        "cve_id": "CVE-2023-49804",
+        "patch_id": "482049c72b3a650c7bc5c26c2f4d57a21c0e0aa",
+        "commit_id": "530c8e53",
+        "patch_url": "https://github.com/louislam/uptime-kuma/commit/482049c72b3a650c7bc5c26c2f4d57a21c0e0aa",
+        "commit_url": "https://github.com/louislam/uptime-kuma/commit/530c8e53"
+    },
+    {
+        "cve_id": "CVE-2023-49805",
+        "patch_id": "2815cc73cfd9d8ced889e00e72899708220d184",
+        "commit_id": "b8bd17dd",
+        "patch_url": "https://github.com/louislam/uptime-kuma/commit/2815cc73cfd9d8ced889e00e72899708220d184",
+        "commit_url": "https://github.com/louislam/uptime-kuma/commit/b8bd17dd"
+    },
+    {
+        "cve_id": "CVE-2023-51697",
+        "patch_id": "f2f2ea161ca0701e1405e737b0df0f96296e4f6",
+        "commit_id": "8f7a420c",
+        "patch_url": "https://github.com/advplyr/audiobookshelf/commit/f2f2ea161ca0701e1405e737b0df0f96296e4f6",
+        "commit_url": "https://github.com/advplyr/audiobookshelf/commit/8f7a420c"
+    },
+    {
+        "cve_id": "CVE-2023-5865",
+        "patch_id": "5f43786f52c3d517e7665abd25d534e180e08dc",
+        "commit_id": "c88939391",
+        "patch_url": "https://github.com/thorsten/phpmyfaq/commit/5f43786f52c3d517e7665abd25d534e180e08dc",
+        "commit_url": "https://github.com/thorsten/phpmyfaq/commit/c88939391"
+    },
+    {
+        "cve_id": "CVE-2023-5890",
+        "patch_id": "a868f1cdd98a4f1255a70fd6d8320511e0083f3",
+        "commit_id": "5c0f35ffc4",
+        "patch_url": "https://github.com/pkp/pkp-lib/commit/a868f1cdd98a4f1255a70fd6d8320511e0083f3",
+        "commit_url": "https://github.com/pkp/pkp-lib/commit/5c0f35ffc4"
+    },
+    {
+        "cve_id": "CVE-2023-5895",
+        "patch_id": "83fa560d6fb54458b312addd23a91ee6520dbe6",
+        "commit_id": "da283a1340",
+        "patch_url": "https://github.com/pkp/pkp-lib/commit/83fa560d6fb54458b312addd23a91ee6520dbe6",
+        "commit_url": "https://github.com/pkp/pkp-lib/commit/da283a1340"
+    },
+    {
+        "cve_id": "CVE-2024-22191",
+        "patch_id": "fc92a05a8556b1787c8694643286a1afa6a7125",
+        "commit_id": "15970dc8",
+        "patch_url": "https://github.com/avo-hq/avo/commit/fc92a05a8556b1787c8694643286a1afa6a7125",
+        "commit_url": "https://github.com/avo-hq/avo/commit/15970dc8"
+    },
+    {
+        "cve_id": "CVE-2024-22411",
+        "patch_id": "fc92a05a8556b1787c8694643286a1afa6a7125",
+        "commit_id": "15970dc8",
+        "patch_url": "https://github.com/avo-hq/avo/commit/fc92a05a8556b1787c8694643286a1afa6a7125",
+        "commit_url": "https://github.com/avo-hq/avo/commit/15970dc8"
+    },
+    {
+        "cve_id": "CVE-2024-24758",
+        "patch_id": "d3aa574b1259c1d8d329a0f0f495ee82882b145",
+        "commit_id": "b9da3e40",
+        "patch_url": "https://github.com/nodejs/undici/commit/d3aa574b1259c1d8d329a0f0f495ee82882b145",
+        "commit_url": "https://github.com/nodejs/undici/commit/b9da3e40"
+    },
+    {
+        "cve_id": "CVE-2024-29041",
+        "patch_id": "0b746953c4bd8e377123527db11f9cd866e39f9",
+        "commit_id": "d106bf53",
+        "patch_url": "https://github.com/expressjs/express/commit/0b746953c4bd8e377123527db11f9cd866e39f9",
+        "commit_url": "https://github.com/expressjs/express/commit/d106bf53"
+    },
+    {
+        "cve_id": "CVE-2024-34356",
+        "patch_id": "e95a1224719efafb9cab2d85964f240fd0356e6",
+        "commit_id": "02439b76db4",
+        "patch_url": "https://github.com/TYPO3/typo3/commit/e95a1224719efafb9cab2d85964f240fd0356e6",
+        "commit_url": "https://github.com/TYPO3/typo3/commit/02439b76db4"
+    },
+    {
+        "cve_id": "CVE-2024-31988",
+        "patch_id": "d9f5043da289ff106f08e23576746fd8baf9879",
+        "commit_id": "4896712ee64",
+        "patch_url": "https://github.com/xwiki/xwiki-platform/commit/d9f5043da289ff106f08e23576746fd8baf9879",
+        "commit_url": "https://github.com/xwiki/xwiki-platform/commit/4896712ee64"
+    },
+    {
+        "cve_id": "CVE-2024-37890",
+        "patch_id": "eeb76d313e2a00dd5247ca3597bba7877d064a6",
+        "commit_id": "e55e5106",
+        "patch_url": "https://github.com/websockets/ws/commit/eeb76d313e2a00dd5247ca3597bba7877d064a6",
+        "commit_url": "https://github.com/websockets/ws/commit/e55e5106"
+    },
+    {
+        "cve_id": "CVE-2024-39309",
+        "patch_id": "f332d54577608c5ad927255e06d8c694e2e0ff5",
+        "commit_id": "2edf1e4c",
+        "patch_url": "https://github.com/parse-community/parse-server/commit/f332d54577608c5ad927255e06d8c694e2e0ff5",
+        "commit_url": "https://github.com/parse-community/parse-server/commit/2edf1e4c"
+    },
+    {
+        "cve_id": "CVE-2024-37900",
+        "patch_id": "9df46f8e5313af46f93bccd1ebc682e28126573",
+        "commit_id": "910a5018a50",
+        "patch_url": "https://github.com/xwiki/xwiki-platform/commit/9df46f8e5313af46f93bccd1ebc682e28126573",
+        "commit_url": "https://github.com/xwiki/xwiki-platform/commit/910a5018a50"
+    },
+    {
+        "cve_id": "CVE-2024-37901",
+        "patch_id": "bbde8a4f564e3c28839440076334a9093e2b483",
+        "commit_id": "742cd459164",
+        "patch_url": "https://github.com/xwiki/xwiki-platform/commit/bbde8a4f564e3c28839440076334a9093e2b483",
+        "commit_url": "https://github.com/xwiki/xwiki-platform/commit/742cd459164"
+    },
+    {
+        "cve_id": "CVE-2024-42490",
+        "patch_id": "359b343f51524342a5ca03828e7c975a1d654b1",
+        "commit_id": "694a65b4a",
+        "patch_url": "https://github.com/goauthentik/authentik/commit/359b343f51524342a5ca03828e7c975a1d654b1",
+        "commit_url": "https://github.com/goauthentik/authentik/commit/694a65b4a"
+    },
+    {
+        "cve_id": "CVE-2024-43799",
+        "patch_id": "ae4f2989491b392ae2ef3b0015a019770ae65d3",
+        "commit_id": "8eaab61",
+        "patch_url": "https://github.com/pillarjs/send/commit/ae4f2989491b392ae2ef3b0015a019770ae65d3",
+        "commit_url": "https://github.com/pillarjs/send/commit/8eaab61"
+    },
+    {
+        "cve_id": "CVE-2024-45047",
+        "patch_id": "83e96e044deb5ecbae2af361ae9e31d3e1ac43a",
+        "commit_id": "98d14ece6",
+        "patch_url": "https://github.com/sveltejs/svelte/commit/83e96e044deb5ecbae2af361ae9e31d3e1ac43a",
+        "commit_url": "https://github.com/sveltejs/svelte/commit/98d14ece6"
+    },
+    {
+        "cve_id": "CVE-2024-45590",
+        "patch_id": "b2695c4450f06ba3b0ccf48d872a229bb41c9bc",
+        "commit_id": "afd0f39",
+        "patch_url": "https://github.com/expressjs/body-parser/commit/b2695c4450f06ba3b0ccf48d872a229bb41c9bc",
+        "commit_url": "https://github.com/expressjs/body-parser/commit/afd0f39"
+    },
+    {
+        "cve_id": "CVE-2024-37299",
+        "patch_id": "76f06f6b1491db6bd09a4017d2c5591431b3b16",
+        "commit_id": "188cb58daa",
+        "patch_url": "https://github.com/discourse/discourse/commit/76f06f6b1491db6bd09a4017d2c5591431b3b16",
+        "commit_url": "https://github.com/discourse/discourse/commit/188cb58daa"
+    },
+    {
+        "cve_id": "CVE-2024-45801",
+        "patch_id": "26e1d69ca7f769f5c558619d644d90dd8bf26eb",
+        "commit_id": "f14c22f",
+        "patch_url": "https://github.com/cure53/DOMPurify/commit/26e1d69ca7f769f5c558619d644d90dd8bf26eb",
+        "commit_url": "https://github.com/cure53/DOMPurify/commit/f14c22f"
+    },
+    {
+        "cve_id": "CVE-2024-39320",
+        "patch_id": "76f06f6b1491db6bd09a4017d2c5591431b3b16",
+        "commit_id": "188cb58daa",
+        "patch_url": "https://github.com/discourse/discourse/commit/76f06f6b1491db6bd09a4017d2c5591431b3b16",
+        "commit_url": "https://github.com/discourse/discourse/commit/188cb58daa"
+    },
+    {
+        "cve_id": "CVE-2024-47070",
+        "patch_id": "dd8f809161e738b25765797eb2a5c77a7d3fc2c",
+        "commit_id": "694a65b4a",
+        "patch_url": "https://github.com/goauthentik/authentik/commit/dd8f809161e738b25765797eb2a5c77a7d3fc2c",
+        "commit_url": "https://github.com/goauthentik/authentik/commit/694a65b4a"
+    },
+    {
+        "cve_id": "CVE-2024-47077",
+        "patch_id": "57a31b5dd16d4adce716b9878455c0d6f58155f",
+        "commit_id": "694a65b4a",
+        "patch_url": "https://github.com/goauthentik/authentik/commit/57a31b5dd16d4adce716b9878455c0d6f58155f",
+        "commit_url": "https://github.com/goauthentik/authentik/commit/694a65b4a"
+    },
+    {
+        "cve_id": "CVE-2024-47183",
+        "patch_id": "1bfbccf9ee7ea77533b2b2aa7c4c69f3bd35e66",
+        "commit_id": "13ee52f0",
+        "patch_url": "https://github.com/parse-community/parse-server/commit/1bfbccf9ee7ea77533b2b2aa7c4c69f3bd35e66",
+        "commit_url": "https://github.com/parse-community/parse-server/commit/13ee52f0"
+    },
+    {
+        "cve_id": "CVE-2024-48930",
+        "patch_id": "e256905ee649a7caacc251f7c964667195a5222",
+        "commit_id": "9a15fff",
+        "patch_url": "https://github.com/cryptocoinjs/secp256k1-node/commit/e256905ee649a7caacc251f7c964667195a5222",
+        "commit_url": "https://github.com/cryptocoinjs/secp256k1-node/commit/9a15fff"
+    },
+    {
+        "cve_id": "CVE-2024-53900",
+        "patch_id": "c9e86bff7eef477da75a29af62a06d41a835a15",
+        "commit_id": "33679bcf8",
+        "patch_url": "https://github.com/Automattic/mongoose/commit/c9e86bff7eef477da75a29af62a06d41a835a15",
+        "commit_url": "https://github.com/Automattic/mongoose/commit/33679bcf8"
+    },
+    {
+        "cve_id": "CVE-2024-54675",
+        "patch_id": "e02c2b864a85d14d64adf9f878f9c7b2bdd1517",
+        "commit_id": "58e734fe6",
+        "patch_url": "https://github.com/MISP/MISP/commit/e02c2b864a85d14d64adf9f878f9c7b2bdd1517",
+        "commit_url": "https://github.com/MISP/MISP/commit/58e734fe6"
+    },
+    {
+        "cve_id": "CVE-2024-55565",
+        "patch_id": "d643045f40d6dc8afa000a644d857da1436ed08",
+        "commit_id": "0daa00f",
+        "patch_url": "https://github.com/ai/nanoid/commit/d643045f40d6dc8afa000a644d857da1436ed08",
+        "commit_url": "https://github.com/ai/nanoid/commit/0daa00f"
+    },
+    {
+        "cve_id": "CVE-2024-56332",
+        "patch_id": "8803d2b46e66ad831aec7979f2b7f0243057e48",
+        "commit_id": "d7ebcb0aab",
+        "patch_url": "https://github.com/vercel/next.js/commit/8803d2b46e66ad831aec7979f2b7f0243057e48",
+        "commit_url": "https://github.com/vercel/next.js/commit/d7ebcb0aab"
+    },
+    {
+        "cve_id": "CVE-2024-57041",
+        "patch_id": "4e69bff72fd04779064d37e46a43080e6c328ad",
+        "commit_id": "26026fb2d7",
+        "patch_url": "https://github.com/NodeBB/NodeBB/commit/4e69bff72fd04779064d37e46a43080e6c328ad",
+        "commit_url": "https://github.com/NodeBB/NodeBB/commit/26026fb2d7"
+    },
+    {
+        "cve_id": "CVE-2024-8196",
+        "patch_id": "9bfe477f10b188bfe3508ac29105df80d4522ec",
+        "commit_id": "f3ea21bc",
+        "patch_url": "https://github.com/mintplex-labs/anything-llm/commit/9bfe477f10b188bfe3508ac29105df80d4522ec",
+        "commit_url": "https://github.com/mintplex-labs/anything-llm/commit/f3ea21bc"
+    },
+    {
+        "cve_id": "CVE-2025-22150",
+        "patch_id": "c3acc6050b781b827d80c86cbbab34f14458d38",
+        "commit_id": "c2d78cd1",
+        "patch_url": "https://github.com/nodejs/undici/commit/c3acc6050b781b827d80c86cbbab34f14458d38",
+        "commit_url": "https://github.com/nodejs/undici/commit/c2d78cd1"
+    },
+    {
+        "cve_id": "CVE-2025-24964",
+        "patch_id": "e0fe1d81e2d4bcddb1c6ca3c5c3970d8ba69738",
+        "commit_id": "191ef9e3",
+        "patch_url": "https://github.com/vitest-dev/vitest/commit/e0fe1d81e2d4bcddb1c6ca3c5c3970d8ba69738",
+        "commit_url": "https://github.com/vitest-dev/vitest/commit/191ef9e3"
+    },
+    {
+        "cve_id": "CVE-2025-25200",
+        "patch_id": "93fe903fc966635a991bcf890cfc3427d33a1a0",
+        "commit_id": "5054af6",
+        "patch_url": "https://github.com/koajs/koa/commit/93fe903fc966635a991bcf890cfc3427d33a1a0",
+        "commit_url": "https://github.com/koajs/koa/commit/5054af6"
+    },
+    {
+        "cve_id": "CVE-2017-8452",
+        "patch_id": "ff76f652a578a949de7f02230cee57bc8d49fc7",
+        "commit_id": "6bf11a7d3e9",
+        "patch_url": "https://github.com/elastic/kibana/commit/ff76f652a578a949de7f02230cee57bc8d49fc7",
+        "commit_url": "https://github.com/elastic/kibana/commit/6bf11a7d3e9"
+    },
+    {
+        "cve_id": "CVE-2011-10004",
+        "patch_id": "e3ff616dc08d3aadff9253f1085e13f677d0c67",
+        "commit_id": "5588430",
+        "patch_url": "https://github.com/wp-plugins/reciply/commit/e3ff616dc08d3aadff9253f1085e13f677d0c67",
+        "commit_url": "https://github.com/wp-plugins/reciply/commit/5588430"
+    },
+    {
+        "cve_id": "CVE-2015-10094",
+        "patch_id": "d7fe42538f4d4af500e3af9678b6b06fba73165",
+        "commit_id": "6456dd2",
+        "patch_url": "https://github.com/wp-plugins/fastly/commit/d7fe42538f4d4af500e3af9678b6b06fba73165",
+        "commit_url": "https://github.com/wp-plugins/fastly/commit/6456dd2"
+    },
+    {
+        "cve_id": "CVE-2015-10095",
+        "patch_id": "7c76ac78f3e16015991b612ff4fa616af4ce929",
+        "commit_id": "506de63",
+        "patch_url": "https://github.com/wp-plugins/woo-popup/commit/7c76ac78f3e16015991b612ff4fa616af4ce929",
+        "commit_url": "https://github.com/wp-plugins/woo-popup/commit/506de63"
+    },
+    {
+        "cve_id": "CVE-2015-8861",
+        "patch_id": "83b8e846a3569bd366cf0b6bdc1e4604d1a2077",
+        "commit_id": "1c863e3",
+        "patch_url": "https://github.com/wycats/handlebars.js/commit/83b8e846a3569bd366cf0b6bdc1e4604d1a2077",
+        "commit_url": "https://github.com/wycats/handlebars.js/commit/1c863e3"
+    },
+    {
+        "cve_id": "CVE-2015-8013",
+        "patch_id": "668a9bbe7033f3f475576209305eb57a54306d2",
+        "commit_id": "0958a9ec",
+        "patch_url": "https://github.com/openpgpjs/openpgpjs/commit/668a9bbe7033f3f475576209305eb57a54306d2",
+        "commit_url": "https://github.com/openpgpjs/openpgpjs/commit/0958a9ec"
+    },
+    {
+        "cve_id": "CVE-2016-10523",
+        "patch_id": "da768a757e7c92fd009a49c3e991c6ea6cdf0f8",
+        "commit_id": "092480a",
+        "patch_url": "https://github.com/mqttjs/mqtt-packet/commit/da768a757e7c92fd009a49c3e991c6ea6cdf0f8",
+        "commit_url": "https://github.com/mqttjs/mqtt-packet/commit/092480a"
+    },
+    {
+        "cve_id": "CVE-2015-3309",
+        "patch_id": "0fa7650df8f940ed6b577d79836a78eb09726c4",
+        "commit_id": "9d4e5f6e3",
+        "patch_url": "https://github.com/ether/etherpad-lite/commit/0fa7650df8f940ed6b577d79836a78eb09726c4",
+        "commit_url": "https://github.com/ether/etherpad-lite/commit/9d4e5f6e3"
+    },
+    {
+        "cve_id": "CVE-2016-10560",
+        "patch_id": "dcf9505f77f2ea50f84372f9b6b521c89561cbe",
+        "commit_id": "f1d0039",
+        "patch_url": "https://github.com/hypery2k/galenframework-cli/commit/dcf9505f77f2ea50f84372f9b6b521c89561cbe",
+        "commit_url": "https://github.com/hypery2k/galenframework-cli/commit/f1d0039"
+    },
+    {
+        "cve_id": "CVE-2016-10586",
+        "patch_id": "03cb4a186b83122383bc2292761d418f519bf3b",
+        "commit_id": "857393f",
+        "patch_url": "https://github.com/macacajs/macaca-chromedriver/commit/03cb4a186b83122383bc2292761d418f519bf3b",
+        "commit_url": "https://github.com/macacajs/macaca-chromedriver/commit/857393f"
+    },
+    {
+        "cve_id": "CVE-2016-10694",
+        "patch_id": "ef8d579ae68a95027afd5204ca644cf00cf72b7",
+        "commit_id": "af008db",
+        "patch_url": "https://github.com/tobli/alto-saxophone/commit/ef8d579ae68a95027afd5204ca644cf00cf72b7",
+        "commit_url": "https://github.com/tobli/alto-saxophone/commit/af008db"
+    },
+    {
+        "cve_id": "CVE-2012-4668",
+        "patch_id": "c086978f6a91eacb339fd2976202fca9dad2ef3",
+        "commit_id": "14c4677ee",
+        "patch_url": "https://github.com/roundcube/roundcubemail/commit/c086978f6a91eacb339fd2976202fca9dad2ef3",
+        "commit_url": "https://github.com/roundcube/roundcubemail/commit/14c4677ee"
+    },
+    {
+        "cve_id": "CVE-2017-1000043",
+        "patch_id": "1b393c4178da71930aa06a5d6d0c2318acd3eed",
+        "commit_id": "9fdd7cd8",
+        "patch_url": "https://github.com/mapbox/mapbox.js/commit/1b393c4178da71930aa06a5d6d0c2318acd3eed",
+        "commit_url": "https://github.com/mapbox/mapbox.js/commit/9fdd7cd8"
+    },
+    {
+        "cve_id": "CVE-2015-6545",
+        "patch_id": "12de87ff9961a4f3ad2946c8f47dd0c26060714",
+        "commit_id": "9d69b7551",
+        "patch_url": "https://github.com/wgm/cerb/commit/12de87ff9961a4f3ad2946c8f47dd0c26060714",
+        "commit_url": "https://github.com/wgm/cerb/commit/9d69b7551"
+    }
+]

@@ -1,0 +1,24 @@
+As a JavaScript code semantics expert, you are required to identify the code snippet from the target codebase that is most semantically similar to the given code. Please try to find corresponding code for each line as much as possible.
+
+Input: Target codebase and given code.
+
+Output:
+The code from the target codebase that is most semantically similar to the given code.
+
+Output Format Requirements:
+1. Output a Python-style list where each element contains only one line of content, e.g., ['''line A content''', '''line B content''' ... '''line N content'''].
+2. The output code must be from the target codebase, not the given code.
+3. Do not use ``` or any explanatory text.
+4. If no match is found, output [].
+
+Now, process the following input:
+
+Target codebase:
+
+{}
+
+Given code:
+
+{}
+
+The most semantically similar lines:
