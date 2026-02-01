@@ -1,0 +1,14 @@
+{
+  "id": "",
+  "dependencies": {
+    "node-unrar": "0.1.0",
+    "sleep": "^6.3.0"
+  },
+  "links": {
+    "source1": "https://www.npmjs.com/package/node-unrar/v/0.1.0",
+    "source2": ""
+  },
+  "fixedVersion": "0.1.6",
+  "fixCommit": "https://github.com/scopsy/node-unrar/pull/11/commits/c0046c4cc9a1f2a3a87f7a1289d1fd52193ace3c",
+  "sink": "lib/index.js:23:3"
+}

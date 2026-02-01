@@ -1,0 +1,13 @@
+{
+  "id": "CVE-2017-15010",
+  "dependencies": {
+    "tough-cookie": "2.3.2"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/npm:tough-cookie:20170905",
+    "source2": "https://github.com/advisories/GHSA-g7q5-pjjr-gqvp"
+  },
+  "fixedVersion": "2.3.3",
+  "fixCommit": "https://github.com/salesforce/tough-cookie/commit/98e0916d7b017669c93855d831c6e0b19c14141e",
+  "sink": "cookie.js:330:23"
+}

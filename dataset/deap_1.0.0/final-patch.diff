@@ -1,0 +1,28 @@
+diff --git a/lib/deap.js b/lib/deap.js
+index 6ac55f0..89ef559 100755
+--- a/lib/deap.js
++++ b/lib/deap.js
+@@ -108,7 +112,7 @@ function deepMerge(a, b /*, [b2..n] */) {
+ 		var ap, bp, ta, tb;
+ 		Object.keys(b).forEach(function(p) {
+ 			ap = a[p];
+-			bp = b[p];
++			bp = getProp(b, p);
+ 			ta = typeOf(ap);
+ 			tb = typeOf(bp);
+ 			if(tb === 'object' && ta === 'object')
+diff --git a/lib/deap.js b/lib/deap.js
+index 6ac55f0..89ef559 100755
+--- a/lib/deap.js
++++ b/lib/deap.js
+@@ -12,6 +12,10 @@ module.exports = {
+ 	mergeShallow: merge
+ };
+ 
++function getProp(obj, p) {
++	return p === '__proto__' ? undefined : obj[p];
++}
++
+ function clone(val) {
+ 	switch(typeOf(val)) {
+ 		case 'object':

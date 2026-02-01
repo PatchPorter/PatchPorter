@@ -1,0 +1,14 @@
+diff --git a/index.js b/index.js
+index 7a10350..afda009 100644
+--- a/index.js
++++ b/index.js
+@@ -75,6 +75,9 @@ api.set = function set (obj, pointer, value) {
+ 
+     for (var i = 0; i < refTokens.length - 1; ++i) {
+         var tok = refTokens[i];
++        if (typeof tok !== 'string' && typeof tok !== 'number') {
++          tok = String(tok)
++        }
+         if (tok === "__proto__" || tok === "constructor" || tok === "prototype") {
+             continue
+         }

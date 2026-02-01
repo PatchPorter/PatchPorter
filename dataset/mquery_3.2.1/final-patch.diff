@@ -1,0 +1,27 @@
+diff --git a/lib/utils.js b/lib/utils.js
+index ef51712..fba56c8 100644
+--- a/lib/utils.js
++++ b/lib/utils.js
+@@ -133,6 +141,9 @@ exports.merge = function merge(to, from) {
+ 
+   while (i--) {
+     key = keys[i];
++    if (specialProperties.indexOf(key) !== -1) {
++      continue;
++    }
+     if ('undefined' === typeof to[key]) {
+       to[key] = from[key];
+     } else {
+diff --git a/lib/utils.js b/lib/utils.js
+index ef51712..fba56c8 100644
+--- a/lib/utils.js
++++ b/lib/utils.js
+@@ -7,6 +7,8 @@
+ var Buffer = require('safe-buffer').Buffer;
+ var RegExpClone = require('regexp-clone');
+ 
++var specialProperties = ['__proto__', 'constructor', 'prototype'];
++
+ /**
+  * Clones objects
+  *

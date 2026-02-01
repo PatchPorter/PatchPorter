@@ -1,0 +1,40 @@
+diff --git a/index.js b/index.js
+index f298e3f..02cd776 100644
+--- a/index.js
++++ b/index.js
+@@ -16,10 +21,12 @@ const assign = module.exports = (target, ...args) => {
+   for (; i < args.length; i++) {
+     if (isObject(args[i])) {
+       for (const key of Object.keys(args[i])) {
+-        if (isObject(target[key]) && isObject(args[i][key])) {
+-          assign(target[key], args[i][key]);
+-        } else {
+-          target[key] = args[i][key];
++        if (isValidKey(key)) {
++          if (isObject(target[key]) && isObject(args[i][key])) {
++            assign(target[key], args[i][key]);
++          } else {
++            target[key] = args[i][key];
++          }
+         }
+       }
+       assignSymbols(target, args[i]);
+diff --git a/index.js b/index.js
+index f298e3f..02cd776 100644
+--- a/index.js
++++ b/index.js
+@@ -7,8 +7,13 @@
+ 
+ 'use strict';
+ 
+-const assignSymbols = require('assign-symbols');
+ const toString = Object.prototype.toString;
++const assignSymbols = require('assign-symbols');
++
++const isValidKey = key => {
++  return key !== '__proto__' && key !== 'constructor' && key !== 'prototype';
++};
++
+ const assign = module.exports = (target, ...args) => {
+   let i = 0;
+   if (isPrimitive(target)) target = args[i++];

@@ -1,0 +1,13 @@
+{
+  "id": "CVE-2018-3734",
+  "dependencies": {
+    "stattic": "0.2.3"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/npm:stattic:20180307",
+    "source2": "https://github.com/advisories/GHSA-w4pv-w56c-mg4v"
+  },
+  "fixedVersion": "0.3.0",
+  "fixCommit": "https://github.com/jmjuanes/stattic/commit/1649daafa646b12d7311640690df967b0107d768",
+  "sink": "index.js:117:23"
+}

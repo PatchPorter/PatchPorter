@@ -1,0 +1,13 @@
+{
+  "id": "CVE-2020-7781",
+  "dependencies": {
+    "connection-tester": "0.2.0"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/SNYK-JS-CONNECTIONTESTER-1048337",
+    "source2": "https://github.com/advisories/GHSA-w5mp-8p8w-mhh8"
+  },
+  "fixedVersion": "0.2.1",
+  "fixCommit": "https://github.com/skoranga/node-connection-tester/pull/10/commits/c1dc374138e1a9d3361c4b8e1ddb1a81d4b45bee",
+  "sink": "index.js:15:28"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "CVE-2020-7675",
+  "dependencies": {
+    "cd-messenger": "2.7.24"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/SNYK-JS-CDMESSENGER-571493",
+    "source2": "https://github.com/advisories/GHSA-v756-4whv-48vc"
+  },
+  "fixedVersion": "n/a",
+  "fixCommit": "https://github.com/mikeerickson/cd-messenger/pull/1/commits/cbdf7d8c06463388fd4f088bfbdc5eeaa65eba56",
+  "sink": "src/messenger-node.js:70:9"
+}

@@ -1,0 +1,14 @@
+diff --git a/lib/router.js b/lib/router.js
+index be232b9..d8f8e30 100644
+--- a/lib/router.js
++++ b/lib/router.js
+@@ -731,6 +730,9 @@
+     dispatch["static"] = function(pathname, req, res) {
+       var full_path;
+       full_path = "" + dispatch.static_route + (unescape(pathname));
++      if (full_path.indexOf('..') !== -1) {
++        return dispatch._403(null, res, pathname, "Trying to get private things through directory traversal is a nasty thing to do.");
++      }
+       return fs.exists(full_path, function(exists) {
+         var e, error;
+         if (exists) {

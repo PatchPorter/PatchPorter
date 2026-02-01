@@ -1,0 +1,13 @@
+{
+  "id": "CVE-2017-16198",
+  "dependencies": {
+    "ritp": "1.0.5"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/npm:ritp:20170508",
+    "source2": "https://github.com/advisories/GHSA-gf7h-vg5v-cch6"
+  },
+  "fixedVersion": "n/a",
+  "fixCommit": "https://github.com/hardog/ritp/pull/1/commits/1eadc2746d0fb60d0050bad302b4081f802476e4",
+  "sink": "index.js:53:37"
+}

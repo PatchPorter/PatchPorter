@@ -1,0 +1,13 @@
+{
+  "id": "CVE-2020-28437",
+  "dependencies": {
+    "heroku-env": "0.2.0"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/SNYK-JS-HEROKUENV-1050432",
+    "source2": ""
+  },
+  "fixedVersion": "n/a",
+  "fixCommit": "https://github.com/brianc/node-heroku-env/pull/1/commits/55830e3ab777d3565bd37c084e6abb7ebc5497e8",
+  "sink": "lib/get.js:3:3"
+}

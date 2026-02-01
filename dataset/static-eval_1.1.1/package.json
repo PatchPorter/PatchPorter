@@ -1,0 +1,13 @@
+{
+  "id": "",
+  "dependencies": {
+    "static-eval": "1.1.1"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/SNYK-JS-STATICEVAL-173693",
+    "source2": "https://github.com/advisories/GHSA-8v27-2fg9-7h62"
+  },
+  "fixedVersion": "2.0.2",
+  "fixCommit": "https://github.com/browserify/static-eval/commit/c06f1b8c0a0cd1cc989c025fbb4c5776fc661c2c",
+  "sink": "index.js:118:20"
+}

@@ -1,0 +1,13 @@
+diff --git a/lib/util/strip.js b/lib/util/strip.js
+index 68d15df6..8ebf4cb1 100644
+--- a/lib/util/strip.js
++++ b/lib/util/strip.js
+@@ -2,7 +2,7 @@
+ 
+ module.exports = str => {
+   const pattern = [
+-    '[\\u001B\\u009B][[\\]()#;?]*(?:(?:(?:[a-zA-Z\\d]*(?:;[a-zA-Z\\d]*)*)?\\u0007)',
++    '[\\u001B\\u009B][[\\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\\d\\/#&.:=?%@~_]+)*|[a-zA-Z\\d]+(?:;[-a-zA-Z\\d\\/#&.:=?%@~_]*)*)?\\u0007)',
+     '(?:(?:\\d{1,4}(?:;\\d{0,4})*)?[\\dA-PRZcf-ntqry=><~]))'
+   ].join('|');
+ 

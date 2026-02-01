@@ -1,0 +1,34 @@
+diff --git a/index.js b/index.js
+index 7f53a9c..35c00d0 100644
+--- a/index.js
++++ b/index.js
+@@ -45,7 +45,7 @@ module.exports = function(md, options) {
+       // Remove reference-style links?
+       .replace(/^\s{1,2}\[(.*?)\]: (\S+)( ".*?")?\s*$/g, '')
+       // Remove atx-style headers
+-      .replace(/^(\n)?\s{0,}#{1,6}\s+| {0,}(\n)?\s{0,}#{0,} {0,}(\n)?\s{0,}$/gm, '$1$2$3')
++      .replace(/^(\n)?\s{0,}#{1,6}\s+| {0,}(\n)?\s{0,}#{0,}$/gm, '$1$2')
+       // Remove emphasis (repeat the line to remove double emphasis)
+       .replace(/([\*_]{1,3})(\S.*?\S{0,1})\1/g, '$2')
+       .replace(/([\*_]{1,3})(\S.*?\S{0,1})\1/g, '$2')
+diff --git a/test/remove-markdown.js b/test/remove-markdown.js
+index d037666..dadac65 100644
+--- a/test/remove-markdown.js
++++ b/test/remove-markdown.js
+@@ -141,5 +141,16 @@ describe('remove Markdown', function () {
+       const expected = '\nThis is a heading\n\nThis is a paragraph with a link.\n\nThis is another heading\n\nIn Getting Started we set up something foo.\n\n  Some list\n  With items\n    Even indented';
+       expect(removeMd(paragraph)).to.equal(expected);
+     });
++
++    it('should not trigger ReDoS with atx-headers', function () {
++      const start = Date.now();
++
++      const paragraph = '\n## This is a long "'+' '.repeat(200)+'" heading ##\n';
++      const expected = /\nThis is a long " {200}" heading\n/;
++      expect(removeMd(paragraph)).to.match(expected);
++
++      const duration = Date.now()-start;
++      expect(duration).to.be.lt(500);
++    });
+   });
+ });

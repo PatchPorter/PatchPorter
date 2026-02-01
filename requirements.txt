@@ -1,0 +1,10 @@
+codebleu==0.7.0
+matplotlib==3.10.8
+nltk==3.9.1
+numpy==2.4.2
+openai==2.16.0
+python_Levenshtein==0.25.1
+scipy==1.17.0
+tree_sitter==0.22.3
+tree_sitter_javascript==0.21.4
+unidiff==0.7.5

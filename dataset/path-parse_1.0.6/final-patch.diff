@@ -1,0 +1,13 @@
+diff --git a/index.js b/index.js
+index 3b7601f..e6b2af1 100644
+--- a/index.js
++++ b/index.js
+@@ -51,7 +51,7 @@ win32.parse = function(pathString) {
+ // Split a filename into [root, dir, basename, ext], unix version
+ // 'root' is just a slash, or nothing.
+ var splitPathRe =
+-    /^(\/?|)([\s\S]*?)((?:\.{1,2}|[^\/]+?|)(\.[^.\/]*|))(?:[\/]*)$/;
++    /^(\/?|)((?:[^\/]*\/)*)((?:\.{1,2}|[^\/]+?|)(\.[^.\/]*|))(?:[\/]*)$/;
+ var posix = {};
+ 
+ 

@@ -1,0 +1,16 @@
+diff --git a/index.js b/index.js
+index ce55325..96b49f0 100644
+--- a/index.js
++++ b/index.js
+@@ -75,9 +75,9 @@ function apply(changes, target, modify) {
+               ptr[prop] = {};
+             }
+ 
+-            if (i < len - 1) {
++            if (i < len - 1 && ptr.hasOwnProperty(prop)) {
+               ptr = ptr[prop];
+-            } else {
++            } else if (prop !== '__proto__') {
+               ptr[prop] = ch.value;
+             }
+           });

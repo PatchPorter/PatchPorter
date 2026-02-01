@@ -1,0 +1,34 @@
+diff --git a/deepHas.js b/deepHas.js
+index 63931ee..369546b 100644
+--- a/deepHas.js
++++ b/deepHas.js
+@@ -49,21 +49,26 @@ function reduce(obj, str) {
+ function add(obj, str, val) {
+     "use strict";
+     try {
+-        if ( typeof str !== "string") {
++        if (typeof str !== "string") {
+             return;
+         }
+-        if ( typeof obj !== "object") {
++        if (str.indexOf('__proto__') != -1) {
++            throw "cannot modify prototype property";
++        }
++        if (typeof obj !== "object") {
+             return;
+         }
+         if (!val) {
+             return;
+         }
+         var items = str.split('.');
++        console.log(str);
+         var initial = items.slice(0, items.length - 1);
+         var last = items.slice(items.length - 1);
+         var test = initial.reduce(indexTrue, obj);
+         test[last] = val;
+-    } catch(ex) {
++
++    } catch (ex) {
+         console.error(ex);
+         return;
+     }

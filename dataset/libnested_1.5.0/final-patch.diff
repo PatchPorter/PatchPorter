@@ -1,0 +1,28 @@
+diff --git a/index.js b/index.js
+index 34d6951..48d9833 100644
+--- a/index.js
++++ b/index.js
+@@ -91,6 +91,10 @@ function clone (obj) {
+   return _obj
+ }
+ 
++function isPrototypePolluted(key) {
++  return ['__proto__', 'constructor', 'prototype'].includes(key)
++}
++
+ exports.get = get
+ exports.set = set
+ exports.each = each
+diff --git a/index.js b/index.js
+index 34d6951..48d9833 100644
+--- a/index.js
++++ b/index.js
+@@ -27,7 +27,7 @@ function set (obj, path, value) {
+       obj[path[i]] = value
+     else if(null == obj[path[i]])
+       obj = (obj[path[i]] = isNonNegativeInteger(path[i+1]) ? [] : {})
+-    else
++    else if (!(isPrototypePolluted(path[i])))
+       obj = obj[path[i]]
+   return value
+ }

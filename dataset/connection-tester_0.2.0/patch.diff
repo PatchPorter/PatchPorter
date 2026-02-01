@@ -1,0 +1,237 @@
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+index 53df519..d9fa07b 100644
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -1,19 +1,24 @@
++# 0.2.1
++
++- validate host and port values, return error for invalid hostname/IP and port.
++
+ # 0.2.0
+ 
+- - Remove shelljs & switch to child_process `execSync` instead ( drops support of node@v0.10)
+- - Drop support for node 0.10 & 0.12
++- Remove shelljs & switch to child_process `execSync` instead ( drops support of node@v0.10)
++- Drop support for node 0.10 & 0.12
++
++# 0.0.4 - 20151006
+ 
+-#0.0.4 - 20151006
+- - update dependencies
++- update dependencies
+ 
+-#0.0.4 - 20141110
++# 0.0.4 - 20141110
+ 
+ - Increased socket timeout to 500ms
+ 
+-#0.0.3 - 20141105
++# 0.0.3 - 20141105
+ 
+ - Support for Async version
+ 
+-#0.0.1 - 20131205
++# 0.0.1 - 20131205
+ 
+ - Test connection provided host and port
+diff --git a/index.js b/index.js
+index 614a6d6..4f37c5a 100644
+--- a/index.js
++++ b/index.js
+@@ -7,6 +7,13 @@ const shell = require('child_process');
+ 
+ let SOCKET_TIMEOUT = 1000;   //Setting 1s as max acceptable timeout
+ 
++//source - http://stackoverflow.com/questions/106179/regular-expression-to-match-dns-hostname-or-ip-address
++var ValidHostnameRegex = new RegExp("^(([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\-]*[a-zA-Z0-9])\.)*([A-Za-z0-9]|[A-Za-z0-9][A-Za-z0-9\-]*[A-Za-z0-9])$");
++
++function isValidHostNameOrIP(host) {
++    return net.isIP(host) || ValidHostnameRegex.test(host);
++}
++
+ function testSync(host, port, connectTimeout) {
+     const nodeBinary = process.execPath;
+     const scriptPath = path.join(__dirname, "./scripts/connection-tester");
+@@ -75,22 +82,48 @@ module.exports = {
+         return SOCKET_TIMEOUT;
+ 
+     },
+-    test: function ConnectionTester(host, port, callbackOrConnectTimeout, callback) {
++    test: function ConnectionTester(host, port, connectTimeout, callback) {
++
++        // validate host
++        if (!isValidHostNameOrIP(host)) {
++            console.error('[connection-tester] invalid host: ', host);
++            host = undefined;
++        }
++        // validate port
++        var originalPort = port;
++        port = +port;
++        if (!port || port < 0 || port > 65535) {
++            console.error('[connection-tester] invalid port: ', originalPort);
++            port = undefined;
++        }
+ 
+-        // for backward compatibility
+-        if (typeof callbackOrConnectTimeout === 'function') {
+-            console.log('deprecated: Please migrate to the new interface ConnectionTester\(host, port, timeout, callback\)');
+-            return testAsync(host, port, SOCKET_TIMEOUT, callbackOrConnectTimeout);
++        if (typeof connectTimeout === 'function') {
++            console.error('deprecated: Please migrate to the new interface ConnectionTester\(host, port, timeout, callback\)');
++            callback = connectTimeout;
++            connectTimeout = SOCKET_TIMEOUT;
++        }
++        if (connectTimeout === undefined) {
++            connectTimeout = SOCKET_TIMEOUT;
+         }
+-        if (typeof callbackOrConnectTimeout === 'number') {
++
++        if (typeof connectTimeout === 'number') {
++            if (!port || !host) {
++                var output = {
++                    success: false,
++                    error: 'invalid host/port'
++                };
++
++                if (callback) {
++                    return callback(null, output);
++                } else {
++                    return output;
++                }
++            }
+             if (callback) {
+-                return testAsync(host, port, callbackOrConnectTimeout, callback);
++                return testAsync(host, port, connectTimeout, callback);
+             } else {
+-                return testSync(host, port, callbackOrConnectTimeout);
++                return testSync(host, port, connectTimeout);
+             }
+         }
+-        if (callbackOrConnectTimeout === undefined) {
+-            return testSync(host, port, SOCKET_TIMEOUT);
+-        }
+     }
+ };
+diff --git a/package.json b/package.json
+index 7315107..8616665 100644
+--- a/package.json
++++ b/package.json
+@@ -1,6 +1,6 @@
+ {
+   "name": "connection-tester",
+-  "version": "0.2.0",
++  "version": "0.2.1",
+   "description": "test if the connection can be established with the given host and port",
+   "main": "index.js",
+   "author": "Sanjeev Koranga",
+@@ -24,7 +24,8 @@
+   "readmeFilename": "README.md",
+   "dependencies": {},
+   "devDependencies": {
+-    "mocha": "^4",
++    "dns-sync": "~0.2",
++    "mocha": "^8",
+     "jshint": "^2"
+   }
+ }
+diff --git a/test/test-async.js b/test/test-async.js
+index a796b9d..950df93 100644
+--- a/test/test-async.js
++++ b/test/test-async.js
+@@ -2,6 +2,7 @@
+ 
+ var assert = require('assert'),
+     net = require('net'),
++    dnsSync = require('dns-sync'),
+     connectionTester = require('../index');
+ 
+ 
+@@ -40,6 +41,14 @@ describe('Connection tester - Async', function () {
+         });
+     });
+ 
++    it('should connect to www.google.com\'s IP 443', function (next) {
++        connectionTester.test(dnsSync.resolve('www.google.com'), 443, function (err, connectOut) {
++            assert.ok(connectOut.error === null);
++            assert.ok(connectOut.success === true);
++            next();
++        });
++    });
++
+     it('should connect to www.yahoo.com 80', function (next) {
+         connectionTester.test('www.yahoo.com', 80, function (err, connectOut) {
+             assert.ok(connectOut.error === null);
+@@ -49,7 +58,7 @@ describe('Connection tester - Async', function () {
+     });
+ 
+     it('should return false while connecting to dead port on localhost', function (next) {
+-        connectionTester.test('localhost', 9999, function (err, connectOut) {
++        connectionTester.test('localhost', 9999, 1000, function (err, connectOut) {
+             assert.ok(connectOut.error.indexOf('connect ECONNREFUSED') !== -1);
+             assert.ok(connectOut.success === false);
+             next();
+@@ -57,7 +66,7 @@ describe('Connection tester - Async', function () {
+     });
+ 
+     it('should return false while connecting to 5678 port on www.example.com', function (next) {
+-        connectionTester.test('www.example.com', 5678, function (err, connectOut) {
++        connectionTester.test('www.example.com', 5678, 1000, function (err, connectOut) {
+             console.log(connectOut);
+             assert.ok(connectOut.error === 'socket TIMEOUT');
+             assert.ok(connectOut.success === false);
+@@ -65,4 +74,13 @@ describe('Connection tester - Async', function () {
+         });
+     });
+ 
++    it('should return false for invalid host and port', function (next) {
++        connectionTester.test('& touch 111', '& touch 222', 1000, function (err, connectOut) {
++            console.log(connectOut);
++            assert.ok(connectOut.error);
++            assert.ok(connectOut.success === false);
++            next();
++        });
++    });
++
+ });
+diff --git a/test/test-sync.js b/test/test-sync.js
+index 1867b75..5a3c8d2 100644
+--- a/test/test-sync.js
++++ b/test/test-sync.js
+@@ -2,6 +2,7 @@
+ 
+ var assert = require('assert'),
+     net = require('net'),
++    dnsSync = require('dns-sync'),
+     connectionTester = require('../index');
+ 
+ 
+@@ -35,6 +36,10 @@ describe('Connection tester - Sync', function () {
+         var connectOut = connectionTester.test('www.google.com', 443);
+         assert.ok(connectOut.error === null);
+         assert.ok(connectOut.success === true);
++
++        connectOut = connectionTester.test(dnsSync.resolve('www.google.com'), 443);
++        assert.ok(connectOut.error === null);
++        assert.ok(connectOut.success === true);
+         next();
+     });
+ 
+@@ -59,4 +64,18 @@ describe('Connection tester - Sync', function () {
+         next();
+     });
+ 
++    it('should return false for all these invalid cases', function (next) {
++        var errorMsg = 'invalid host/port';
++        assert.ok(connectionTester.test('helloworld.', 'hello').error === errorMsg);
++        assert.ok(connectionTester.test('www.example.com', 'hello').error === errorMsg);
++        assert.ok(connectionTester.test('www.example.com', -1).error === errorMsg);
++        assert.ok(connectionTester.test('www.example.com', 65536).error === errorMsg);
++        assert.ok(connectionTester.test('www.example.com', 9999999).error === errorMsg);
++        assert.ok(connectionTester.test('www.example.com', '& touch 222').error === errorMsg);
++        assert.ok(connectionTester.test('& touch 111', '& touch 222').error === errorMsg);
++        assert.ok(connectionTester.test('& touch 111', 80).error === errorMsg);
++        assert.ok(connectionTester.test('www.test', 80).error);
++        next();
++    });
++
+ });

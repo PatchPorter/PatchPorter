@@ -1,0 +1,13 @@
+{
+  "id": "",
+  "dependencies": {
+    "webrepl": "0.4.7"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/npm:webrepl:20180315",
+    "source2": ""
+  },
+  "fixedVersion": "n/a",
+  "fixCommit": "https://github.com/mmattozzi/webrepl/pull/1/commits/e4f37cfc980ee5f36495f419fe1006acf28ef59e",
+  "sink": "webrepl.js:177:12"
+}

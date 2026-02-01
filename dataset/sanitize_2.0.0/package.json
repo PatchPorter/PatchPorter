@@ -1,0 +1,13 @@
+{
+  "id": "",
+  "dependencies": {
+    "sanitize": "2.0.0"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/npm:sanitize:20180225",
+    "source2": ""
+  },
+  "fixedVersion": " 2.1.0",
+  "fixCommit": "https://github.com/pocketly/node-sanitize/commit/4fd57530367ea9f2570b1e57d1a1a32e7f5d644f#diff-bd042f5439b55acdcce363c79e2f55d6R148",
+  "sink": "Sanitizer.js:148:37"
+}

@@ -1,0 +1,31 @@
+diff --git a/index.js b/index.js
+index a6c95ba3..f9ee8241 100644
+--- a/index.js
++++ b/index.js
+@@ -659,6 +659,10 @@ function parse (args, opts) {
+     if (!configuration['dot-notation']) keys = [keys.join('.')]
+ 
+     keys.slice(0, -1).forEach(function (key, index) {
++      // TODO(bcoe): in the next major version of yargs, switch to
++      // Object.create(null) for dot notation:
++      key = sanitizeKey(key)
++
+       if (typeof o === 'object' && o[key] === undefined) {
+         o[key] = {}
+       }
+diff --git a/index.js b/index.js
+index a6c95ba3..f9ee8241 100644
+--- a/index.js
++++ b/index.js
+@@ -900,4 +906,11 @@ Parser.detailed = function (args, opts) {
+   return parse(args.slice(), opts)
+ }
+ 
++// TODO(bcoe): in the next major version of yargs, switch to
++// Object.create(null) for dot notation:
++function sanitizeKey (key) {
++  if (key === '__proto__') return '___proto___'
++  return key
++}
++
+ module.exports = Parser

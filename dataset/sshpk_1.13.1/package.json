@@ -1,0 +1,13 @@
+{
+  "id": "CVE-2018-3737",
+  "dependencies": {
+    "sshpk": "1.13.1"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/npm:sshpk:20180409",
+    "source2": "https://github.com/advisories/GHSA-2m39-62fm-q8r3"
+  },
+  "fixedVersion": "1.14.1",
+  "fixCommit": "https://github.com/joyent/node-sshpk/commit/46065d38a5e6d1bccf86d3efb2fb83c14e3f9957",
+  "sink": "ssh.js:28:18"
+}

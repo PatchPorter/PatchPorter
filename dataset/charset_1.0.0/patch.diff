@@ -1,0 +1,129 @@
+diff --git a/.eslintignore b/.eslintignore
+deleted file mode 100644
+index eb984b6..0000000
+--- a/.eslintignore
++++ /dev/null
+@@ -1,4 +0,0 @@
+-test/fixtures
+-examples/**/app/public
+-logs
+-run
+diff --git a/.travis.yml b/.travis.yml
+index 5ec1467..1651002 100644
+--- a/.travis.yml
++++ b/.travis.yml
+@@ -3,7 +3,7 @@ language: node_js
+ node_js:
+   - '4'
+   - '6'
+-  - '7'
++  - '8'
+ install:
+   - npm i npminstall && npminstall
+ script:
+diff --git a/appveyor.yml b/appveyor.yml
+index 2efd0fa..56f601f 100644
+--- a/appveyor.yml
++++ b/appveyor.yml
+@@ -2,7 +2,7 @@ environment:
+   matrix:
+     - nodejs_version: '4'
+     - nodejs_version: '6'
+-    - nodejs_version: '7'
++    - nodejs_version: '8'
+ 
+ install:
+   - ps: Install-Product node $env:nodejs_version
+@@ -11,6 +11,6 @@ install:
+ test_script:
+   - node --version
+   - npm --version
+-  - npm run ci
++  - npm run test
+ 
+ build: off
+diff --git a/index.js b/index.js
+index 30be98c..0b420cf 100644
+--- a/index.js
++++ b/index.js
+@@ -1,6 +1,6 @@
+ 'use strict';
+ 
+-const CHARTSET_RE = /(?:charset|encoding)\s*=\s*['"]? *([\w\-]+)/i;
++const CHARTSET_RE = /(?:charset|encoding)\s{0,10}=\s{0,10}['"]? {0,10}([\w\-]{1,100})/i;
+ 
+ module.exports = charset;
+ 
+diff --git a/package.json b/package.json
+index 5feb86b..35929f9 100644
+--- a/package.json
++++ b/package.json
+@@ -6,14 +6,14 @@
+   "scripts": {
+     "test": "npm run lint && egg-bin test",
+     "ci": "npm run lint && egg-bin cov",
+-    "lint": "eslint ."
++    "lint": "eslint test *.js"
+   },
+   "dependencies": {},
+   "devDependencies": {
+-    "egg-bin": "^2.0.2",
++    "egg-bin": "1",
+     "egg-ci": "^1.1.0",
+-    "eslint": "^3.14.1",
+-    "eslint-config-egg": "^3.2.0"
++    "eslint": "4",
++    "eslint-config-egg": "5"
+   },
+   "homepage": "https://github.com/node-modules/charset",
+   "repository": {
+@@ -32,7 +32,7 @@
+     "node": ">=4.0.0"
+   },
+   "ci": {
+-    "version": "4, 6, 7"
++    "version": "4, 6, 8"
+   },
+   "author": "fengmk2 <fengmk2@gmail.com> (https://fengmk2.com)",
+   "license": "MIT"
+diff --git a/test/performance.test.js b/test/performance.test.js
+new file mode 100644
+index 0000000..fe85956
+--- /dev/null
++++ b/test/performance.test.js
+@@ -0,0 +1,35 @@
++'use strict';
++
++const assert = require('assert');
++const charset = require('..');
++
++describe('performance.test.js', () => {
++  function genstr(len, chr) {
++    let result = '';
++    for (let i = 0; i < len; i++) {
++      result += chr;
++    }
++    return result;
++  }
++  const longspace = genstr(800000, ' ');
++  const longa = genstr(800000, 'a');
++
++  it('should run fast', () => {
++    assert(charset('encoding=' + longspace + '"utf8') === null);
++  });
++
++  it('should ignore space > 10', () => {
++    assert(charset('encoding=' + genstr(0, ' ') + '"utf8') === 'utf8');
++    assert(charset('encoding=' + genstr(9, ' ') + '"utf8') === 'utf8');
++    assert(charset('encoding=' + genstr(10, ' ') + '"utf8') === 'utf8');
++    assert(charset('encoding=' + genstr(11, ' ') + '"utf8') === null);
++  });
++
++  it('should ignore charset length > 100', () => {
++    assert(charset('encoding=' + genstr(11, 'a')) === genstr(11, 'a'));
++    assert(charset('encoding=' + genstr(99, 'a')) === genstr(99, 'a'));
++    assert(charset('encoding=' + genstr(100, 'a')) === genstr(100, 'a'));
++    assert(charset('encoding=' + genstr(101, 'a')) === genstr(100, 'a'));
++    assert(charset('encoding=' + longa) === genstr(100, 'a'));
++  });
++});

@@ -1,0 +1,13 @@
+{
+  "id": "CVE-2020-7771",
+  "dependencies": {
+    "asciitable.js": "1.0.2"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/SNYK-JS-ASCIITABLEJS-1039799",
+    "source2": "https://github.com/advisories/GHSA-5pxj-mhwj-x5gv"
+  },
+  "fixedVersion": "1.0.3",
+  "fixCommit": "https://github.com/victornpb/asciitable.js/commit/b4d29c7a7b5206ba95a7c204099c381711134dbc",
+  "sink": "asciitable.umd.js:50:104"
+}

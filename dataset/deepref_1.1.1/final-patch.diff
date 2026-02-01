@@ -1,0 +1,15 @@
+diff --git a/index.js b/index.js
+index f893843..ff2668e 100644
+--- a/index.js
++++ b/index.js
+@@ -55,6 +55,10 @@ Reference.createFromPath = function(pointer, path) {
+   var reference = new Reference(pointer);
+   path = path.split('.');
+   path.forEach(function(field) {
++    if (field === '__proto__') {
++      throw new Error('Cannot assign reference to prototype')
++    }
++
+     var isNumber = checkIfStringIsNumber(field);
+     var hasParent = reference.getParent() ? true : false;
+     if (isNumber) {
