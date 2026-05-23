@@ -65,6 +65,24 @@ Dataset setup requires cloning from [SecBench.js](https://github.com/nicolo-riba
 
 The `motivation1-study/` directory contains data and analysis code for our preliminary study comparing code similarity patterns between NPM and C ecosystems. See [motivation1-study/README.md](motivation1-study/README.md) for details.
 
+## Major Artifacts
+
+The `major-artifacts/` directory contains the case-study artifacts and the
+standalone reproduction pipeline used for the multi-branch and data-leakage
+experiments.
+
+Included artifact files:
+
+- `300-multibranch-case.json`: selected multi-branch patch-porting cases.
+- `20-dataleakage-case.json`: selected data-leakage/security-fix cases for
+  qualitative inspection, including successful and unsuccessful examples.
+
+Each artifact entry contains the CVE ID, repository, fix commit, target commit,
+source-only oracle patch, generated patch, and semantic similarity judgment.
+
+See [major-artifacts/README.md](major-artifacts/README.md) for input format,
+commands, and implementation details.
+
 
 ## Repository Structure
 
@@ -91,10 +109,14 @@ PatchPorter/
 │   ├── path-traversal/          # Path traversal vulnerabilities
 │   ├── prototype-pollution/     # Prototype pollution vulnerabilities
 │   └── redos/                   # ReDoS vulnerabilities
+├── major-artifacts/             # Major case-study artifacts and reproduction pipeline
+│   ├── 300-multibranch-case.json
+│   ├── 20-dataleakage-case.json
+│   ├── README.md
+│   └── *.py                     # Standalone artifact reproduction pipeline
 └── motivation1-study/           # Preliminary study data & analysis
     ├── NPM-CVE.csv              # NPM vulnerability dataset
     ├── C-CVE.json               # C vulnerability dataset (for comparison)
     ├── plot_js_vs_c_cdf.py      # Similarity analysis visualization
     └── similarity_results/      # Pre-computed similarity metrics
 ```
-
