@@ -1,0 +1,396 @@
+Processing id web-node-server_0.1.0#mysitque-0.js#onRequest with before length 2073 and after length 2092
+Processing id deephas_1.0.5#mysitque-0.js#add with before length 535 and after length 671
+Found 0 removable tree triplets.
+removable tree triplets []
+Processing id git-dummy-commit_1.3.0#mysitque-0.js#module.exports with before length 454 and after length 440
+Found 0 removable tree triplets.
+removable tree triplets []
+not sliced func before deephas_1.0.5#mysitque-0.js#add
+not sliced func before target deephas_1.0.5#mysitque-0.js#add
+no placeholder in func before deephas_1.0.5#mysitque-0.js#add length 535
+no placeholder in func after deephas_1.0.5#mysitque-0.js#add length 670
+no placeholder in func target deephas_1.0.5#mysitque-0.js#add length 229
+no placeholder in func before git-dummy-commit_1.3.0#mysitque-0.js#module.exports length 449
+no placeholder in func after git-dummy-commit_1.3.0#mysitque-0.js#module.exports length 435
+no placeholder in func target git-dummy-commit_1.3.0#mysitque-0.js#module.exports length 224
+00:00:00
+Processing id node-df_0.1.4#mysitque-0.js#module.exports with before length 1390 and after length 1567
+Processing id deepref_1.1.1#mysitque-0.js#Reference.createFromPath with before length 464 and after length 566
+Processing id diskusage-ng_0.2.6#mysitque-0.js#diskusage with before length 380 and after length 257
+00:00:00
+Processing id deep-override_1.0.0#mysitque-0.js#override with before length 1637 and after length 1732
+Processing id thenify_3.3.0#mysitque-1.js#createCallback with before length 514 and after length 583
+Processing id colors-cli_1.0.25#mysitque-0.js#module.exports with before length 248 and after length 295
+critical_lines_dict: {'diff': "--- dummy_fname.c\n+++ dummy_fname.c\n@@ -1,6 +1,6 @@\n module.exports = function () {\n   const pattern = [\n-    '[\\\\u001B\\\\u009B][[\\\\]()#;?]*(?:(?:(?:[a-zA-Z\\\\d]*(?:;[a-zA-Z\\\\d]*)*)?\\\\u0007)',\n+    '[\\\\u001B\\\\u009B][[\\\\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\\\\d\\\\/#&.:=?%@~_]+)*|[a-zA-Z\\\\d]+(?:;[-a-zA-Z\\\\d\\\\/#&.:=?%@~_]*)*)?\\\\u0007)',\n     '(?:(?:\\\\d{1,4}(?:;\\\\d{0,4})*)?[\\\\dA-PRZcf-ntqry=><~]))'\n   ].join('|');\n   return new RegExp(pattern, 'g');\n", 'del_set': {3}, 'add_set': {3}}
+Found 0 removable tree tuples.
+removable tree tuples []
+Found 0 removable tree triplets.
+removable tree triplets []
+not sliced func before colors-cli_1.0.25#mysitque-0.js#module.exports
+not sliced func after colors-cli_1.0.25#mysitque-0.js#module.exports
+not sliced func before target colors-cli_1.0.25#mysitque-0.js#module.exports
+no placeholder in func before colors-cli_1.0.25#mysitque-0.js#module.exports length 248
+no placeholder in func after colors-cli_1.0.25#mysitque-0.js#module.exports length 295
+no placeholder in func target colors-cli_1.0.25#mysitque-0.js#module.exports length 248
+00:00:00
+Processing id style-dictionary_2.10.2#mysitque-0.js#deepExtend with before length 1659 and after length 1713
+Processing id asciitable.js_1.0.2#mysitque-0.js#defaults with before length 214 and after length 580
+critical_lines_dict: {'diff': '--- dummy_fname.c\n+++ dummy_fname.c\n@@ -1,6 +1,11 @@\n-function defaults(c, b) {\n-            for (var a in b) {\n-                b.hasOwnProperty(a) && (c[a] && typeof b[a] === "object" ? defaults(c[a], b[a]) : c[a] = b[a]);\n-            }\n-            return c;\n+function defaults(defaultObj, options) {\n+            var isObj = function (x) { return x !== null && typeof x === "object"; };\n+            if(isObj(options))\n+                for (var prop in defaultObj) {\n+                    if (Object.prototype.hasOwnProperty.call(defaultObj, prop) && Object.prototype.hasOwnProperty.call(options, prop)) {\n+                        if (isObj(defaultObj[prop])) defaults(defaultObj[prop], options[prop])\n+                        else defaultObj[prop] = options[prop];\n+                    }\n+                }\n+            return defaultObj;\n         }', 'del_set': {1, 2, 3, 4, 5}, 'add_set': {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}}
+Found 0 removable tree tuples.
+removable tree tuples []
+Found 0 removable tree triplets.
+removable tree triplets []
+Processing id trim-off-newlines_1.0.0#mysitque-0.js#module.exports with before length 67 and after length 294
+critical_lines_dict: {'diff': "--- dummy_fname.c\n+++ dummy_fname.c\n@@ -1,3 +1,12 @@\n module.exports = function (str) {\n-\treturn str.replace(regex, '');\n+\tvar result = str.match(regex);\n+\tif (!result) {\n+\t\treturn '';\n+\t}\n+\tvar firstIndex = result.index;\n+\tvar lastIndex = str.length - 1;\n+\twhile (str[lastIndex] === '\\r' || str[lastIndex] === '\\n') {\n+\t\tlastIndex--;\n+\t}\n+\treturn str.substring(firstIndex, lastIndex + 1);\n }", 'del_set': {2}, 'add_set': {2, 3, 4, 5, 6, 7, 8, 9, 10, 11}}
+Found 0 removable tree tuples.
+removable tree tuples []
+Found 0 removable tree triplets.
+removable tree triplets []
+not sliced func before asciitable.js_1.0.2#mysitque-0.js#defaults
+not sliced func after asciitable.js_1.0.2#mysitque-0.js#defaults
+not sliced func before target asciitable.js_1.0.2#mysitque-0.js#defaults
+no placeholder in func before asciitable.js_1.0.2#mysitque-0.js#defaults length 214
+no placeholder in func after asciitable.js_1.0.2#mysitque-0.js#defaults length 580
+no placeholder in func target asciitable.js_1.0.2#mysitque-0.js#defaults length 214
+not sliced func before trim-off-newlines_1.0.0#mysitque-0.js#module.exports
+not sliced func after trim-off-newlines_1.0.0#mysitque-0.js#module.exports
+not sliced func before target trim-off-newlines_1.0.0#mysitque-0.js#module.exports
+no placeholder in func before trim-off-newlines_1.0.0#mysitque-0.js#module.exports length 67
+no placeholder in func after trim-off-newlines_1.0.0#mysitque-0.js#module.exports length 294
+no placeholder in func target trim-off-newlines_1.0.0#mysitque-0.js#module.exports length 67
+00:00:00
+Processing id ritp_1.0.5#mysitque-0.js#main with before length 1716 and after length 1741
+Processing id ffmpegdotjs_0.0.4#mysitque-12.js#addaudiotovideo with before length 571 and after length 589
+Processing id getobject_0.1.0#mysitque-0.js#getobject.set with before length 218 and after length 333
+00:00:00
+Processing id remove-markdown_0.3.0#mysitque-0.js#module.exports with before length 2459 and after length 2441
+Processing id ansi-html_0.0.7#mysitque-0.js#ansiHTML with before length 890 and after length 889
+Processing id sanitize_2.0.0#mysitque-0.js#fixUrl with before length 478 and after length 481
+00:00:00
+Processing id hoek_5.0.0#mysitque-0.js#exports.merge with before length 2013 and after length 2081
+Found 0 removable tree triplets.
+removable tree triplets []
+Processing id ffmpegdotjs_0.0.4#mysitque-13.js#addoverlayimagetime with before length 652 and after length 670
+Processing id mquery_3.2.1#mysitque-0.js#exports.merge with before length 366 and after length 437
+no placeholder in func before hoek_5.0.0#mysitque-0.js#exports.merge length 2003
+no placeholder in func after hoek_5.0.0#mysitque-0.js#exports.merge length 2070
+no placeholder in func target hoek_5.0.0#mysitque-0.js#exports.merge length 1823
+00:00:00
+Processing id fast-http_0.1.3#mysitque-0.js#module.exports with before length 1781 and after length 1836
+Processing id ffmpegdotjs_0.0.4#mysitque-4.js#addoverlayimage with before length 591 and after length 609
+Processing id eivindfjeldstad-dot_0.0.1#mysitque-0.js#exports.set with before length 271 and after length 342
+critical_lines_dict: {'diff': "--- dummy_fname.c\n+++ dummy_fname.c\n@@ -1,15 +1,18 @@\n-exports.set = function (obj, path, val) {\n+exports.set = function(obj, path, val) {\n   var segs = path.split('.');\n   var attr = segs.pop();\n   var src = obj;\n \n   for (var i = 0; i < segs.length; i++) {\n     var seg = segs[i];\n+    if (!isSafe(obj, seg)) return src;\n     obj[seg] = obj[seg] || {};\n     obj = obj[seg];\n   }\n \n-  obj[attr] = val;\n+  if (isSafe(obj, attr)) {\n+    obj[attr] = val;\n+  }\n \n   return src;\n }", 'del_set': {1, 12}, 'add_set': {1, 8, 13, 14, 15}}
+Found 0 removable tree tuples.
+removable tree tuples []
+Found 0 removable tree triplets.
+removable tree triplets []
+no placeholder in func before eivindfjeldstad-dot_0.0.1#mysitque-0.js#exports.set length 268
+no placeholder in func after eivindfjeldstad-dot_0.0.1#mysitque-0.js#exports.set length 339
+no placeholder in func target eivindfjeldstad-dot_0.0.1#mysitque-0.js#exports.set length 268
+00:00:00
+Processing id stattic_0.2.3#mysitque-0.js#module.exports.listen with before length 2917 and after length 2983
+Processing id clamscan_1.2.0#mysitque-0.js#_is_clamav_binary with before length 978 and after length 1070
+Processing id object-path-set_1.0.0#mysitque-0.js#setPath with before length 458 and after length 503
+Processing id thenify_3.3.0#mysitque-2.js#thenify with before length 139 and after length 104
+critical_lines_dict: {'diff': "--- dummy_fname.c\n+++ dummy_fname.c\n@@ -1,4 +1,4 @@\n-function thenify($$__fn__$$, options) {\n-  assert(typeof $$__fn__$$ === 'function')\n-  return eval(createWrapper($$__fn__$$.name, options))\n+function thenify(fn, options) {\n+  assert(typeof fn === 'function')\n+  return createWrapper(fn, options)\n }", 'del_set': {1, 2, 3}, 'add_set': {1, 2, 3}}
+Found 0 removable tree tuples.
+removable tree tuples []
+Found 0 removable tree triplets.
+removable tree triplets []
+not sliced func before thenify_3.3.0#mysitque-2.js#thenify
+not sliced func after thenify_3.3.0#mysitque-2.js#thenify
+not sliced func before target thenify_3.3.0#mysitque-2.js#thenify
+no placeholder in func before thenify_3.3.0#mysitque-2.js#thenify length 139
+no placeholder in func after thenify_3.3.0#mysitque-2.js#thenify length 104
+no placeholder in func target thenify_3.3.0#mysitque-2.js#thenify length 565
+00:00:00
+Processing id json-schema_0.3.0#mysitque-0.js#checkObj with before length 1827 and after length 1847
+Processing id ini-parser_0.0.2#mysitque-0.js#parse with before length 350 and after length 621
+critical_lines_dict: {'diff': "--- dummy_fname.c\n+++ dummy_fname.c\n@@ -5,10 +5,17 @@\n \tvar match\n \n \tfor(var i = 0, len = lines.length; i !== len; i++){\n-\t\tif(match = lines[i].match(REG_GROUP))\n+\t\tif(match = lines[i].match(REG_GROUP)){\n+\t\t\tif (match[1] === '__proto__' || match[1] === 'constructor' || match[1] === 'prototype') {\n+            \treturn object;\n+        \t}\n \t\t\tobject[match[1]] = group = object[match[1]] || {};\n-\t\telse if(group && (match = lines[i].match(REG_PROP)))\n+\t\t}else if(group && (match = lines[i].match(REG_PROP))){\n+\t\t\tif (match[1] === '__proto__' || match[1] === 'constructor' || match[1] === 'prototype') {\n+            \treturn object;\n+        \t}\n \t\t\tgroup[match[1]] = match[2];\n+\t\t}\n \t}\n \n \treturn object;\n", 'del_set': {8, 10}, 'add_set': {8, 9, 10, 11, 13, 14, 15, 16, 18}}
+Found 0 removable tree tuples.
+removable tree tuples []
+Found 0 removable tree triplets.
+removable tree triplets []
+Processing id merge-options_1.0.0#mysitque-0.js#mergeKeys with before length 221 and after length 351
+critical_lines_dict: {'diff': '--- dummy_fname.c\n+++ dummy_fname.c\n@@ -1,9 +1,10 @@\n (merged, source, keys, mergeOpts) => {\n \tkeys.forEach(key => {\n-\t\tif (key in merged) {\n-\t\t\tmerged[key] = merge(merged[key], source[key], mergeOpts);\n+\t\t// Do not recurse into prototype chain of merged\n+\t\tif (key in merged && merged[key] !== Object.getPrototypeOf(merged)) {\n+\t\t\tdefineProperty(merged, key, merge(merged[key], source[key], mergeOpts));\n \t\t} else {\n-\t\t\tmerged[key] = clone(source[key]);\n+\t\t\tdefineProperty(merged, key, clone(source[key]));\n \t\t}\n \t});\n \n', 'del_set': {3, 4, 6}, 'add_set': {3, 4, 5, 7}}
+Found 0 removable tree tuples.
+removable tree tuples []
+Found 0 removable tree triplets.
+removable tree triplets []
+no placeholder in func before ini-parser_0.0.2#mysitque-0.js#parse length 348
+no placeholder in func after ini-parser_0.0.2#mysitque-0.js#parse length 619
+no placeholder in func target ini-parser_0.0.2#mysitque-0.js#parse length 348
+no placeholder in func before merge-options_1.0.0#mysitque-0.js#mergeKeys length 220
+no placeholder in func after merge-options_1.0.0#mysitque-0.js#mergeKeys length 350
+no placeholder in func target merge-options_1.0.0#mysitque-0.js#mergeKeys length 243
+00:00:00
+Processing id yargs-parser_6.0.0#mysitque-0.js#setKey with before length 2063 and after length 2336
+Found 0 removable tree triplets.
+removable tree triplets []
+Processing id tiny-conf_1.1.0#mysitque-0.js#set with before length 614 and after length 740
+Processing id im-resize_2.3.2#mysitque-0.js#module.exports with before length 279 and after length 440
+no placeholder in func before yargs-parser_6.0.0#mysitque-0.js#setKey length 2055
+no placeholder in func after yargs-parser_6.0.0#mysitque-0.js#setKey length 2327
+no placeholder in func target yargs-parser_6.0.0#mysitque-0.js#setKey length 610
+00:00:00
+Processing id ini_1.3.5#mysitque-0.js#decode with before length 1943 and after length 2176
+Processing id m-log_0.0.1#mysitque-0.js#this.setColorTheme with before length 623 and after length 737
+Processing id libnested_1.5.0#mysitque-0.js#set with before length 403 and after length 440
+00:00:00
+Processing id timespan_2.3.0#mysitque-0.js#exports.parseDate with before length 2657 and after length 2662
+Processing id urlregex_0.5.0#mysitque-0.js#module.exports with before length 1040 and after length 1034
+critical_lines_dict: {'diff': '--- dummy_fname.c\n+++ dummy_fname.c\n@@ -12,5 +12,5 @@\n   var path = \'(?:[/?#][^\\\\s"]*)?\';\n   var regex = \'(?:\' + protocol + \'|www\\\\.)\' + auth + \'(?:localhost|\' + ip + \'|\' + host + domain + tld + \')\' + port + path;\n \n-  return exact ? new RegExp(\'(?:^\' + regex + \'$)\', \'i\') : new RegExp(regex, \'ig\');\n+  return exact ? new RE2(\'(?:^\' + regex + \'$)\', \'i\') : new RE2(regex, \'ig\');\n }', 'del_set': {15}, 'add_set': {15}}
+Found 0 removable tree tuples.
+removable tree tuples []
+Found 0 removable tree triplets.
+removable tree triplets []
+Processing id jsonpointer_4.0.0#mysitque-0.js#compilePointer with before length 300 and after length 497
+Processing id axios_0.21.0#mysitque-0.js#trim with before length 76 and after length 86
+critical_lines_dict: {'diff': "--- dummy_fname.c\n+++ dummy_fname.c\n@@ -1,3 +1,3 @@\n function trim(str) {\n-  return str.replace(/^\\s*/, '').replace(/\\s*$/, '');\n+  return str.trim ? str.trim() : str.replace(/^\\s+|\\s+$/g, '');\n }", 'del_set': {2}, 'add_set': {2}}
+Found 0 removable tree tuples.
+removable tree tuples []
+Found 0 removable tree triplets.
+removable tree triplets []
+no placeholder in func before urlregex_0.5.0#mysitque-0.js#module.exports length 1039
+no placeholder in func after urlregex_0.5.0#mysitque-0.js#module.exports length 1033
+no placeholder in func target urlregex_0.5.0#mysitque-0.js#module.exports length 686
+not sliced func before axios_0.21.0#mysitque-0.js#trim
+not sliced func after axios_0.21.0#mysitque-0.js#trim
+not sliced func before target axios_0.21.0#mysitque-0.js#trim
+no placeholder in func before axios_0.21.0#mysitque-0.js#trim length 76
+no placeholder in func after axios_0.21.0#mysitque-0.js#trim length 86
+no placeholder in func target axios_0.21.0#mysitque-0.js#trim length 76
+00:00:00
+Processing id js-yaml_3.13.0#mysitque-0.js#storeMappingPair with before length 1433 and after length 1896
+Found 0 removable tree triplets.
+removable tree triplets []
+Processing id algoliasearch-helper_3.6.0#mysitque-0.js#_merge with before length 585 and after length 644
+Processing id access-policy_3.1.0#mysitque-0.js#template with before length 123 and after length 364
+critical_lines_dict: {'diff': '--- dummy_fname.c\n+++ dummy_fname.c\n@@ -1,5 +1,13 @@\n function template(literal, data) {\n   var tmpl = literal.replace(/(\\$\\{)/gm, \'$1data.\');\n+  let blacklist = [\'&\', \';\', \'|\', \'-\', \'$\', \'`\', \'||\'];\n \n+  if (blacklist.some(v => tmpl.includes(v))) {\n+    for(var i=0; i<tmpl.length; i++){\n+      if(blacklist.includes(tmpl[i])){\n+        tmpl = tmpl.replace(tmpl[i], "");\n+      }\n+    }\n+  } \n   return eval(\'`\' + tmpl + \'`\');\n }', 'del_set': set(), 'add_set': {3, 5, 6, 7, 8, 9, 10, 11}}
+Found 0 removable tree tuples.
+removable tree tuples []
+Found 0 removable tree triplets.
+removable tree triplets []
+no placeholder in func before js-yaml_3.13.0#mysitque-0.js#storeMappingPair length 1428
+no placeholder in func after js-yaml_3.13.0#mysitque-0.js#storeMappingPair length 1887
+no placeholder in func target js-yaml_3.13.0#mysitque-0.js#storeMappingPair length 537
+no placeholder in func before access-policy_3.1.0#mysitque-0.js#template length 122
+no placeholder in func after access-policy_3.1.0#mysitque-0.js#template length 363
+no placeholder in func target access-policy_3.1.0#mysitque-0.js#template length 122
+00:00:00
+Processing id brace-expansion_1.1.6#mysitque-0.js#expand with before length 2442 and after length 2438
+Processing id get-npm-package-version_1.0.6#mysitque-0.js#module.exports with before length 753 and after length 866
+Processing id node-unrar_0.1.0#mysitque-0.js#UnrarModule.prototype._execute with before length 444 and after length 457
+00:00:00
+Processing id run-this-place_1.0.2#mysitque-0.js#main with before length 1716 and after length 1741
+Processing id safe-flat_2.0.0#mysitque-1.js#unflatten with before length 486 and after length 593
+Processing id safe-flat_2.0.0#mysitque-0.js#unflat with before length 284 and after length 333
+critical_lines_dict: {'diff': '--- dummy_fname.c\n+++ dummy_fname.c\n@@ -2,6 +2,7 @@\n     Object.keys(original).forEach((key) => {\n       const newKeys = key.split(seperator)\n       newKeys.reduce((o, k, i) => {\n+        if (proto.includes(newKeys[i])) return o\n         return o[k] || (o[k] = isNaN(Number(newKeys[i + 1])) ? (newKeys.length - 1 === i ? original[key] : {}) : [])\n       }, result)\n     })\n', 'del_set': set(), 'add_set': {5}}
+Found 0 removable tree tuples.
+removable tree tuples []
+Found 0 removable tree triplets.
+removable tree triplets []
+not sliced func before safe-flat_2.0.0#mysitque-0.js#unflat
+not sliced func after safe-flat_2.0.0#mysitque-0.js#unflat
+not sliced func before target safe-flat_2.0.0#mysitque-0.js#unflat
+no placeholder in func before safe-flat_2.0.0#mysitque-0.js#unflat length 284
+no placeholder in func after safe-flat_2.0.0#mysitque-0.js#unflat length 333
+no placeholder in func target safe-flat_2.0.0#mysitque-0.js#unflat length 284
+00:00:00
+Processing id growl_1.9.0#mysitque-0.js#growl with before length 3597 and after length 3488
+Processing id sds_3.2.0#mysitque-0.js#set with before length 958 and after length 1083
+Processing id ffmpegdotjs_0.0.4#mysitque-0.js#extractaudio with before length 497 and after length 515
+Processing id is-my-json-valid_2.20.0#mysitque-0.js#genloop with before length 86 and after length 108
+critical_lines_dict: {'diff': '--- dummy_fname.c\n+++ dummy_fname.c\n@@ -1,5 +1,6 @@\n genloop = function() {\n     var v = vars.shift()\n     vars.push(v+v[0])\n+    allocated.push(v)\n     return v\n   }', 'del_set': set(), 'add_set': {4}}
+Found 0 removable tree tuples.
+removable tree tuples []
+Found 0 removable tree triplets.
+removable tree triplets []
+not sliced func before is-my-json-valid_2.20.0#mysitque-0.js#genloop
+not sliced func after is-my-json-valid_2.20.0#mysitque-0.js#genloop
+not sliced func before target is-my-json-valid_2.20.0#mysitque-0.js#genloop
+no placeholder in func before is-my-json-valid_2.20.0#mysitque-0.js#genloop length 86
+no placeholder in func after is-my-json-valid_2.20.0#mysitque-0.js#genloop length 108
+no placeholder in func target is-my-json-valid_2.20.0#mysitque-0.js#genloop length 86
+00:00:00
+Processing id mcstatic_0.0.20#mysitque-0.js#module.exports with before length 1884 and after length 1954
+Processing id predefine_0.1.2#mysitque-0.js#merge with before length 620 and after length 647
+Processing id deap_1.0.0#mysitque-0.js#deepMerge with before length 366 and after length 375
+00:00:00
+Processing id reduce-css-calc_1.2.0#mysitque-0.js#evaluateExpression with before length 1616 and after length 1621
+Processing id ffmpegdotjs_0.0.4#mysitque-9.js#addaudiotoimage with before length 552 and after length 570
+Processing id date-and-time_0.14.1#mysitque-0.js#date.compile with before length 281 and after length 278
+00:00:00
+Processing id asciitable.js_1.0.2#mysitque-1.js#matrixToAsciiTable with before length 3651 and after length 4018
+Processing id whereis_0.4.0#mysitque-0.js#module.exports with before length 1174 and after length 1186
+Found 0 removable tree triplets.
+removable tree triplets []
+Processing id color-string_1.5.4#mysitque-0.js#cs.get.hwb with before length 516 and after length 522
+Processing id mixin-deep_2.0.0#mysitque-0.js#isObject with before length 130 and after length 114
+critical_lines_dict: {'diff': "--- dummy_fname.c\n+++ dummy_fname.c\n@@ -1,3 +1,3 @@\n-function isObject(val) {\n+val => {\n   return typeof val === 'function' || (typeof val === 'object' && val !== null && !Array.isArray(val));\n }", 'del_set': {1}, 'add_set': {1}}
+Found 0 removable tree tuples.
+removable tree tuples []
+Found 0 removable tree triplets.
+removable tree triplets []
+not sliced func before whereis_0.4.0#mysitque-0.js#module.exports
+not sliced func after whereis_0.4.0#mysitque-0.js#module.exports
+no placeholder in func before whereis_0.4.0#mysitque-0.js#module.exports length 1174
+no placeholder in func after whereis_0.4.0#mysitque-0.js#module.exports length 1186
+no placeholder in func target whereis_0.4.0#mysitque-0.js#module.exports length 609
+not sliced func before mixin-deep_2.0.0#mysitque-0.js#isObject
+not sliced func after mixin-deep_2.0.0#mysitque-0.js#isObject
+not sliced func before target mixin-deep_2.0.0#mysitque-0.js#isObject
+no placeholder in func before mixin-deep_2.0.0#mysitque-0.js#isObject length 130
+no placeholder in func after mixin-deep_2.0.0#mysitque-0.js#isObject length 114
+no placeholder in func target mixin-deep_2.0.0#mysitque-0.js#isObject length 82
+00:00:00
+Processing id pixl-class_1.0.0#mysitque-0.js#exports.create with before length 2681 and after length 2576
+Processing id json-pointer_0.6.0#mysitque-0.js#api.set with before length 792 and after length 906
+Processing id heroku-env_0.2.0#mysitque-0.js#module.exports with before length 474 and after length 485
+00:00:00
+Processing id webrepl_0.4.7#mysitque-0.js#ReplHttpServer.prototype.route with before length 4608 and after length 4768
+Processing id normalize-url_6.0.0#mysitque-0.js#normalizeDataURL with before length 1219 and after length 1225
+Processing id ffmpegdotjs_0.0.4#mysitque-5.js#generategif with before length 505 and after length 523
+Processing id pdf-image_2.0.0#mysitque-0.js#constructGetInfoCommand with before length 120 and after length 115
+critical_lines_dict: {'diff': '--- dummy_fname.c\n+++ dummy_fname.c\n@@ -1,6 +1,6 @@\n constructGetInfoCommand: function () {\n-    return util.format(\n-      "pdfinfo \\"%s\\"",\n-      this.pdfFilePath\n-    );\n+    return {\n+      cmd: "pdfinfo",\n+      args: [this.pdfFilePath]\n+    };\n   }', 'del_set': {2, 3, 4, 5}, 'add_set': {2, 3, 4, 5}}
+Found 0 removable tree tuples.
+removable tree tuples []
+Found 0 removable tree triplets.
+removable tree triplets []
+not sliced func before pdf-image_2.0.0#mysitque-0.js#constructGetInfoCommand
+not sliced func after pdf-image_2.0.0#mysitque-0.js#constructGetInfoCommand
+not sliced func before target pdf-image_2.0.0#mysitque-0.js#constructGetInfoCommand
+no placeholder in func before pdf-image_2.0.0#mysitque-0.js#constructGetInfoCommand length 120
+no placeholder in func after pdf-image_2.0.0#mysitque-0.js#constructGetInfoCommand length 115
+no placeholder in func target pdf-image_2.0.0#mysitque-0.js#constructGetInfoCommand length 120
+00:00:00
+Processing id putil-merge_3.0.0#mysitque-0.js#merge with before length 1936 and after length 1981
+Processing id ffmpegdotjs_0.0.4#mysitque-2.js#addoverlaytext with before length 631 and after length 649
+Processing id is-my-json-valid_2.20.0#mysitque-2.js#formatName with before length 185 and after length 401
+
+err is-my-json-valid_2.20.0#mysitque-2.js#formatName
+Hunk is shorter than expected
+----------------------------------------------------------------------------------------------------
+00:00:00
+Processing id email-existence_0.1.5#mysitque-0.js#module.exports with before length 2253 and after length 2589
+Processing id json-pointer_0.6.1#mysitque-0.js#api.set with before length 906 and after length 1010
+Processing id ffmpegdotjs_0.0.4#mysitque-7.js#convertvideo with before length 475 and after length 493
+00:00:00
+Processing id checkit_0.7.0#mysitque-0.js#module.exports with before length 18599 and after length 19238
+Processing id connection-tester_0.2.0#mysitque-0.js#test with before length 815 and after length 1478
+critical_lines_dict: {'diff': "--- dummy_fname.c\n+++ dummy_fname.c\n@@ -1,18 +1,44 @@\n-test: function ConnectionTester(host, port, callbackOrConnectTimeout, callback) {\n+test: function ConnectionTester(host, port, connectTimeout, callback) {\n \n-        // for backward compatibility\n-        if (typeof callbackOrConnectTimeout === 'function') {\n-            console.log('deprecated: Please migrate to the new interface ConnectionTester\\(host, port, timeout, callback\\)');\n-            return testAsync(host, port, SOCKET_TIMEOUT, callbackOrConnectTimeout);\n+        // validate host\n+        if (!isValidHostNameOrIP(host)) {\n+            console.error('[connection-tester] invalid host: ', host);\n+            host = undefined;\n         }\n-        if (typeof callbackOrConnectTimeout === 'number') {\n+        // validate port\n+        var originalPort = port;\n+        port = +port;\n+        if (!port || port < 0 || port > 65535) {\n+            console.error('[connection-tester] invalid port: ', originalPort);\n+            port = undefined;\n+        }\n+\n+        if (typeof connectTimeout === 'function') {\n+            console.error('deprecated: Please migrate to the new interface ConnectionTester\\(host, port, timeout, callback\\)');\n+            callback = connectTimeout;\n+            connectTimeout = SOCKET_TIMEOUT;\n+        }\n+        if (connectTimeout === undefined) {\n+            connectTimeout = SOCKET_TIMEOUT;\n+        }\n+\n+        if (typeof connectTimeout === 'number') {\n+            if (!port || !host) {\n+                var output = {\n+                    success: false,\n+                    error: 'invalid host/port'\n+                };\n+\n+                if (callback) {\n+                    return callback(null, output);\n+                } else {\n+                    return output;\n+                }\n+            }\n             if (callback) {\n-                return testAsync(host, port, callbackOrConnectTimeout, callback);\n+                return testAsync(host, port, connectTimeout, callback);\n             } else {\n-                return testSync(host, port, callbackOrConnectTimeout);\n+                return testSync(host, port, connectTimeout);\n             }\n         }\n-        if (callbackOrConnectTimeout === undefined) {\n-            return testSync(host, port, SOCKET_TIMEOUT);\n-        }\n     }", 'del_set': {1, 3, 4, 5, 6, 8, 10, 12, 15, 16, 17}, 'add_set': {1, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 39, 41}}
+Found 0 removable tree tuples.
+removable tree tuples []
+Found 0 removable tree triplets.
+removable tree triplets []
+Processing id node-key-sender_1.0.11#mysitque-0.js#module.execute with before length 564 and after length 555
+Processing id kill-by-port_0.0.1#mysitque-0.js#exports.killByPort with before length 216 and after length 230
+no placeholder in func before connection-tester_0.2.0#mysitque-0.js#test length 814
+no placeholder in func after connection-tester_0.2.0#mysitque-0.js#test length 1474
+no placeholder in func target connection-tester_0.2.0#mysitque-0.js#test length 835
+00:00:00
+Processing id papaparse_5.1.1#mysitque-0.js#ParserHandle with before length 10387 and after length 10388
+Processing id objnest_5.0.0#mysitque-0.js#expand with before length 1208 and after length 1326
+Processing id ffmpegdotjs_0.0.4#mysitque-1.js#generateimage with before length 514 and after length 532
+Processing id crud-file-server_0.7.0#mysitque-0.js#cleanUrl with before length 144 and after length 138
+critical_lines_dict: {'diff': "--- dummy_fname.c\n+++ dummy_fname.c\n@@ -1,5 +1,5 @@\n cleanUrl = function(url) { \n \turl = decodeURIComponent(url);\n-\twhile(url.indexOf('..').length > 0) { url = url.replace('..', ''); }\n+\twhile(url.indexOf('..') >= 0) { url = url.replace('..', ''); }\n \treturn url;\n }", 'del_set': {3}, 'add_set': {3}}
+Found 0 removable tree tuples.
+removable tree tuples []
+Found 0 removable tree triplets.
+removable tree triplets []
+not sliced func before crud-file-server_0.7.0#mysitque-0.js#cleanUrl
+not sliced func after crud-file-server_0.7.0#mysitque-0.js#cleanUrl
+not sliced func before target crud-file-server_0.7.0#mysitque-0.js#cleanUrl
+no placeholder in func before crud-file-server_0.7.0#mysitque-0.js#cleanUrl length 144
+no placeholder in func after crud-file-server_0.7.0#mysitque-0.js#cleanUrl length 138
+no placeholder in func target crud-file-server_0.7.0#mysitque-0.js#cleanUrl length 112
+00:00:00
+Processing id node-simple-router_0.10.0#mysitque-0.js#Router with before length 166835 and after length 167313
+Processing id hangersteak_0.2.2#mysitque-0.js#module.exports with before length 1442 and after length 1525
+Processing id underscore.string_3.3.4#mysitque-0.js#module.exports with before length 554 and after length 559
+Processing id set-or-get_1.2.10#mysitque-0.js#SetOrGet with before length 92 and after length 237
+critical_lines_dict: {'diff': "--- dummy_fname.c\n+++ dummy_fname.c\n@@ -1,3 +1,5 @@\n function SetOrGet(input, field, def) {\n+    if (field == '__proto__' || field == 'constructor' || field == 'prototype')\n+        throw new Error('Restricted setting magical attributes')\n     return input[field] = Deffy(input[field], def);\n }", 'del_set': set(), 'add_set': {2, 3}}
+Found 0 removable tree tuples.
+removable tree tuples []
+Found 0 removable tree triplets.
+removable tree triplets []
+not sliced func before set-or-get_1.2.10#mysitque-0.js#SetOrGet
+not sliced func after set-or-get_1.2.10#mysitque-0.js#SetOrGet
+not sliced func before target set-or-get_1.2.10#mysitque-0.js#SetOrGet
+no placeholder in func before set-or-get_1.2.10#mysitque-0.js#SetOrGet length 92
+no placeholder in func after set-or-get_1.2.10#mysitque-0.js#SetOrGet length 237
+no placeholder in func target set-or-get_1.2.10#mysitque-0.js#SetOrGet length 92
+00:00:01
+Processing id minimatch_3.0.0#mysitque-0.js#parse with before length 10224 and after length 10621
+Processing id changeset_0.1.0#mysitque-0.js#apply with before length 1283 and after length 1367
+Processing id objection_2.0.0#mysitque-0.js#set with before length 479 and after length 536
+Processing id mixin-deep_1.3.0#mysitque-0.js#copy with before length 151 and after length 197
+00:00:03
+Processing id static-eval_1.1.1#mysitque-0.js#module.exports with before length 5224 and after length 6315
+Processing id fresh_0.5.0#mysitque-0.js#fresh with before length 1287 and after length 1278
+Found 0 removable tree triplets.
+removable tree triplets []
+Processing id ffmpegdotjs_0.0.4#mysitque-10.js#compressvideo with before length 509 and after length 527
+Processing id is-my-json-valid_2.20.0#mysitque-3.js#gensym with before length 80 and after length 122
+critical_lines_dict: {'diff': '--- dummy_fname.c\n+++ dummy_fname.c\n@@ -1,3 +1,5 @@\n gensym = function(name) {\n-    return name+(syms[name] = (syms[name] || 0)+1)\n+    var res = name+(syms[name] = (syms[name] || 0)+1)\n+    allocated.push(res)\n+    return res\n   }', 'del_set': {2}, 'add_set': {2, 3, 4}}
+Found 0 removable tree tuples.
+removable tree tuples []
+Found 0 removable tree triplets.
+removable tree triplets []
+no placeholder in func before fresh_0.5.0#mysitque-0.js#fresh length 1278
+no placeholder in func after fresh_0.5.0#mysitque-0.js#fresh length 1269
+no placeholder in func target fresh_0.5.0#mysitque-0.js#fresh length 725
+not sliced func before is-my-json-valid_2.20.0#mysitque-3.js#gensym
+not sliced func after is-my-json-valid_2.20.0#mysitque-3.js#gensym
+not sliced func before target is-my-json-valid_2.20.0#mysitque-3.js#gensym
+no placeholder in func before is-my-json-valid_2.20.0#mysitque-3.js#gensym length 80
+no placeholder in func after is-my-json-valid_2.20.0#mysitque-3.js#gensym length 122
+no placeholder in func target is-my-json-valid_2.20.0#mysitque-3.js#gensym length 80
+00:00:05
+Processing id is-my-json-valid_2.20.1#mysitque-1.js#compile with before length 14286 and after length 14477
+Processing id patchmerge_1.0.1#mysitque-0.js#objectMerge with before length 1158 and after length 1460
+Processing id dot-notes_3.2.0#mysitque-0.js#create with before length 436 and after length 546
+Processing id cd-messenger_2.7.24#mysitque-0.js#line with before length 216 and after length 211
+critical_lines_dict: {'diff': "--- dummy_fname.c\n+++ dummy_fname.c\n@@ -1,9 +1,9 @@\n color => {\n     if (color.length > 0) {\n-      try {\n-        eval(`cl.${color}()`); // eslint-disable-line\n+      if (typeof cl[color] === 'function') {\n+        cl[color]();\n       }\n-      catch (e) {\n+      else {\n         console.error(chalk.bgRed.bold(`Invalid Color: ${color}`));\n       }\n     }\n", 'del_set': {3, 4, 6}, 'add_set': {3, 4, 6}}
+Found 0 removable tree tuples.
+removable tree tuples []
+Found 0 removable tree triplets.
+removable tree triplets []
+not sliced func before cd-messenger_2.7.24#mysitque-0.js#line
+not sliced func after cd-messenger_2.7.24#mysitque-0.js#line
+not sliced func before target cd-messenger_2.7.24#mysitque-0.js#line
+no placeholder in func before cd-messenger_2.7.24#mysitque-0.js#line length 216
+no placeholder in func after cd-messenger_2.7.24#mysitque-0.js#line length 211
+no placeholder in func target cd-messenger_2.7.24#mysitque-0.js#line length 218
+00:00:37
+Processing id is-my-json-valid_2.20.1#mysitque-0.js#visit with before length 12667 and after length 12823
+Processing id extend_3.0.1#mysitque-0.js#module.exports with before length 1346 and after length 1436
+Processing id im-metadata_3.0.1#mysitque-0.js#module.exports with before length 374 and after length 543
+Processing id npm-user-validate_1.0.0#mysitque-0.js#email with before length 123 and after length 203
+critical_lines_dict: {'diff': '--- dummy_fname.c\n+++ dummy_fname.c\n@@ -1,5 +1,8 @@\n function email (em) {\n-  if (!em.match(/^.+@.+\\..+$/)) {\n+  if (em.length > 254) {\n+    return new Error(requirements.email.length)\n+  }\n+  if (!em.match(/^[^@]+@.+\\..+$/)) {\n     return new Error(requirements.email.valid)\n   }\n \n', 'del_set': {2}, 'add_set': {2, 3, 4, 5}}
+Found 0 removable tree tuples.
+removable tree tuples []
+Found 0 removable tree triplets.
+removable tree triplets []
+no placeholder in func before npm-user-validate_1.0.0#mysitque-0.js#email length 122
+no placeholder in func after npm-user-validate_1.0.0#mysitque-0.js#email length 202
+no placeholder in func target npm-user-validate_1.0.0#mysitque-0.js#email length 130
+00:00:38
+Processing id is-my-json-valid_2.20.0#mysitque-1.js#compile with before length 14477 and after length 14971
+Processing id patchmerge_1.0.0#mysitque-0.js#objectMerge with before length 1158 and after length 1460
+Processing id ffmpegdotjs_0.0.4#mysitque-11.js#trimvideo with before length 537 and after length 555
+Processing id mixin-deep_2.0.0#mysitque-1.js#mixinDeep with before length 239 and after length 220
+critical_lines_dict: {'diff': "--- dummy_fname.c\n+++ dummy_fname.c\n@@ -1,8 +1,8 @@\n-function mixinDeep(target, ...rest) {\n+(target, ...rest) => {\n   for (let obj of rest) {\n     if (isObject(obj)) {\n       for (let key in obj) {\n-        if (key !== '__proto__') {\n+        if (isValidKey(key)) {\n           mixin(target, obj[key], key);\n         }\n       }\n", 'del_set': {1, 5}, 'add_set': {1, 5}}
+Found 0 removable tree tuples.
+removable tree tuples []
+Found 0 removable tree triplets.
+removable tree triplets []
+not sliced func before mixin-deep_2.0.0#mysitque-1.js#mixinDeep
+not sliced func after mixin-deep_2.0.0#mysitque-1.js#mixinDeep
+not sliced func before target mixin-deep_2.0.0#mysitque-1.js#mixinDeep
+no placeholder in func before mixin-deep_2.0.0#mysitque-1.js#mixinDeep length 239
+no placeholder in func after mixin-deep_2.0.0#mysitque-1.js#mixinDeep length 220
+no placeholder in func target mixin-deep_2.0.0#mysitque-1.js#mixinDeep length 215
+00:00:40
+00:00:00
+all done
